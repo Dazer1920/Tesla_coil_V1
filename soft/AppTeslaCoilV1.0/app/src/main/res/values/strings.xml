@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">TeslaCoil</string>
+    <string name="title_activity_connect" translatable="false">Connect to device</string>
+    <string name="title_activity_file_manager" translatable="false">Open file</string>
+
+    <string name="item_menu_interrupter" translatable="false">Interrupter</string>
+    <string name="item_menu_midi" translatable="false">Midi</string>
+    <string name="item_menu_more" translatable="false">More</string>
+    <string name="item_menu_about" translatable="false">About</string>
+
+    <string name="start_connect_button" translatable="false">Connect</string>
+
+    <string name="scan_for_devices_butt" translatable="false">Scan for devices</string>
+    <string name="par_devices_text_text" translatable="false">Paired devices:</string>
+    <string name="scan_devices_text" translatable="false">Found devices:</string>
+    <string name="no_paired_devices" translatable="false">No devices</string>
+
+    <string name="connected" translatable="false">Connected</string>
+    <string name="disconnected" translatable="false">Disconnected</string>
+
+    <string name="connect_to_device_progress" translatable="false">Connect to </string>
+    <string name="connecting_progress" translatable="false">Connecting...</string>
+    <string name="identification_progress" translatable="false">Identification...</string>
+
+    <string name="error_device_not_found" translatable="false">Device not found</string>
+    <string name="error_disconnected_by_device" translatable="false">Disconnected by device</string>
+    <string name="error_device_went_out_of_range" translatable="false">Device went out of range</string>
+    <string name="error_identification_fail" translatable="false">Identification fail</string>
+
+    <string name="about_text" translatable="false">
+        "This project is designed\n with nothing to do.\n\nif you try to repeat this shit,\nfirst go through ten circles of hell"
+    </string>
+
+    <string name="geolocation_msg" translatable="false">enable geolocation for bluetooth scanner</string>
+    <string name="geolocation_enable" translatable="false">Enable</string>
+    <string name="geolocation_no" translatable="false">No</string>
+
+    <string name="power_voltage" translatable="false">Power voltage: </string>
+    <string name="temperature_trans" translatable="false">Temperature IGBT\'s:</string>
+    <string name="connected_device" translatable="false">Connected to device:</string>
+
+    <string name="low_power_toast" translatable="false">Low power</string>
+    <string name="high_temp_toast" translatable="false">Temperature protect</string>
+
+
+    <string name="interrupter_pulse" translatable="false">Pulse</string>
+    <string name="interrupter_on" translatable="false">ON</string>
+    <string name="interrupter_off" translatable="false">OFF</string>
+    <string name="value_power" translatable="false">Power:</string>
+    <string name="value_freq" translatable="false">Frequency:</string>
+    <string name="value_mod_duty" translatable="false">Mod. duty:</string>
+    <string name="value_mod_freq" translatable="false">Mod. frequency:</string>
+
+    <string name="value_util_power" translatable="false">%</string>
+    <string name="value_util_freq" translatable="false">Hz</string>
+    <string name="value_util_mod_duty" translatable="false">%</string>
+    <string name="value_util_mod_freq" translatable="false">Hz</string>
+
+    <string name="pause_butt_midi" translatable="false">Pause</string>
+    <string name="play_butt_midi" translatable="false">Play</string>
+    <string name="stop_butt_midi" translatable="false">Stop</string>
+    <string name="open_file" translatable="false">Open file</string>
+    <string name="no_file" translatable="false">No file</string>
+    <string name="set_track" translatable="false">Set playable tracks</string>
+    <string name="volume" translatable="false">Volume:</string>
+    <string name="read_progress" translatable="false">Reading...</string>
+    <string name="error_read" translatable="false">Error read file</string>
+    <string name="use_velocity" translatable="false">Use velocity?</string>
+    <string name="lost_package" translatable="false">Lost package</string>
+
+    <string name="set_track_dialog_ok" translatable="false">OK</string>
+    <string name="set_track_dialog_title" translatable="false">Set tracks</string>
+    <string name="set_track_dialog_set_all" translatable="false">Set all</string>
+    <string name="set_track_dialog_reset_all" translatable="false">Reset all</string>
+    <string name="set_track_dialog_track" translatable="false">Track</string>
+
+    <string name="portamento_title" translatable="false">Portamento</string>
+    <string name="portamento_time" translatable="false">Time</string>
+    <string name="portamento_type" translatable="false">Type:</string>
+    <string name="portamento_type_type1" translatable="false">Legato</string>
+    <string name="portamento_type_type2" translatable="false">Glissando</string>
+
+    <string name="adsr_title" translatable="false">ADSR</string>
+
+</resources>

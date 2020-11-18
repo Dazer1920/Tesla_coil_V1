@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/interrupterButton"
+        android:icon="@android:drawable/ic_lock_idle_low_battery"
+        android:title="@string/item_menu_interrupter"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/midiButton"
+        android:icon="@drawable/ic_music_note_black_24dp"
+        android:title="@string/item_menu_midi"
+        app:showAsAction="always" />
+
+    <item android:title="@string/item_menu_more" android:id="@+id/moreButton" />
+    <item android:title= "@string/item_menu_about" android:id="@+id/aboutButton" />
+</menu>

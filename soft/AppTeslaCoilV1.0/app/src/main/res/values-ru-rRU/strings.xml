@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TeslaCoil</string>
+    <string name="title_activity_connect" translatable="false">Подключение к устройству</string>
+    <string name="start_connect_button" translatable="false">Подключить</string>
+    <string name="scan_for_devices_butt" translatable="false">Поиск устройств</string>
+    <string name="scan_devices_text" translatable="false">Найденные устройства:</string>
+    <string name="par_devices_text_text" translatable="false">Сопряженные устройства:</string>
+    <string name="item_menu_more" translatable="false">Ещё</string>
+    <string name="item_menu_midi" translatable="false">Midi</string>
+    <string name="item_menu_interrupter" translatable="false">Прерыватель</string>
+    <string name="item_menu_about" translatable="false">От автора</string>
+    <string name="error_disconnected_by_device" translatable="false">Устройство отключено</string>
+    <string name="error_device_went_out_of_range" translatable="false">Устройство вышло за пределы диапазона</string>
+    <string name="error_device_not_found" translatable="false">Устройство не найдено</string>
+    <string name="disconnected" translatable="false">Соединение разорвано</string>
+    <string name="connecting_progress" translatable="false">Подкючение...</string>
+    <string name="connected" translatable="false">Подключенно</string>
+    <string name="connect_to_device_progress" translatable="false">Подключение к</string>
+    <string name="no_paired_devices" translatable="false">Нет устройств</string>
+    <string name="error_identification_fail" translatable="false">Ошибка идентифткации</string>
+    <string name="geolocation_enable" translatable="false">Включить</string>
+    <string name="identification_progress" translatable="false">Идентификация...</string>
+    <string name="geolocation_msg" translatable="false">Для работы Bluetooth сканера включите геолокацию</string>
+    <string name="connected_device" translatable="false">Подключенно к:</string>
+    <string name="power_voltage" translatable="false">Напряжение питания:</string>
+    <string name="temperature_trans" translatable="false">Температура радиатора:</string>
+    <string name="geolocation_no" translatable="false">Нет</string>
+    <string name="interrupter_pulse" translatable="false">Импульс</string>
+    <string name="interrupter_on" translatable="false">Вкл.</string>
+    <string name="interrupter_off" translatable="false">Выкл.</string>
+    <string name="value_freq" translatable="false">Частота:</string>
+    <string name="value_power" translatable="false">Мощность:</string>
+    <string name="value_util_power" translatable="false">%</string>
+    <string name="value_util_freq" translatable="false">Гц</string>
+    <string name="value_util_mod_duty" translatable="false">%</string>
+    <string name="value_util_mod_freq" translatable="false">Гц</string>
+    <string name="value_mod_duty" translatable="false">Заполнение модуляции:</string>
+    <string name="value_mod_freq" translatable="false">Частота модуляции:</string>
+    <string name="set_track" translatable="false">Установить проирываемые треки</string>
+    <string name="stop_butt_midi" translatable="false">Стоп</string>
+    <string name="volume" translatable="false">Громкость:</string>
+    <string name="no_file" translatable="false">Нет файла</string>
+    <string name="open_file" translatable="false">Открыть файл</string>
+    <string name="pause_butt_midi" translatable="false">Пауза</string>
+    <string name="play_butt_midi" translatable="false">Играть</string>
+    <string name="low_power_toast" translatable="false">Низкое напряжение питания</string>
+    <string name="high_temp_toast" translatable="false">Перегрев</string>
+    <string name="read_progress" translatable="false">Чтение...</string>
+    <string name="error_read" translatable="false">Ошибка при чтении файла</string>
+    <string name="set_track_dialog_ok" translatable="false">ОК</string>
+    <string name="set_track_dialog_reset_all" translatable="false">Сброс. всё</string>
+    <string name="set_track_dialog_title" translatable="false">Установка треков</string>
+    <string name="set_track_dialog_set_all" translatable="false">Уст. всё</string>
+    <string name="set_track_dialog_track" translatable="false">Трек</string>
+    <string name="use_velocity" translatable="false">Учитывать горомкость ноты?</string>
+    <string name="title_activity_file_manager" translatable="false">Открыть файл</string>
+    <string name="portamento_time" translatable="false">Время</string>
+    <string name="portamento_title" translatable="false">Портаменто</string>
+    <string name="lost_package" translatable="false">Потерян пакет</string>
+</resources>

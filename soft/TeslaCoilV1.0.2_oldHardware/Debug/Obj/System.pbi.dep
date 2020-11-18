@@ -1,0 +1,17 @@
+System.pbi: \
+  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2_oldHardware\rsc\System.c \
+  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2_oldHardware\inc\System.h \
+  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2_oldHardware\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h \
+  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2_oldHardware\CMSIS\Device\ST\STM32F0xx\Include/stm32f030x6.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\CMSIS\Core\Include\core_cm0.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdint.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Defaults.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Config_Normal.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Product.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\CMSIS\Core\Include/cmsis_version.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\CMSIS\Core\Include/cmsis_compiler.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\CMSIS\Core\Include\cmsis_iccarm.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\iccarm_builtin.h \
+  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2_oldHardware\CMSIS\Device\ST\STM32F0xx\Include/system_stm32f0xx.h

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspace>
+    <project>
+        <path>$WS_DIR$\..\..\..\..\myProjects\Airsoft\ControlUnit\Version2.2\AirsoftControlUnit.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\TeslaCoilV1.0.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\..\..\..\..\myProjects\Airsoft\Key\version2.0\TinyKeyV1.0.ewp</path>
+    </project>
+    <batchBuild />
+</workspace>
