@@ -349,15 +349,15 @@
                 </option>
                 <option>
                     <name>CCIncludePath2</name>
-                    <state>C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc</state>
-                    <state>C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc\midi</state>
-                    <state>C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc\ProcessingData</state>
-                    <state>C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\rsc</state>
-                    <state>C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\rsc\midi</state>
-                    <state>C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\rsc\ProcesingInputData</state>
-                    <state>C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\CMSIS\Device\ST\STM32F0xx\Source\Templates</state>
-                    <state>C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\CMSIS\Device\ST\STM32F0xx\Source\Templates\iar</state>
-                    <state>C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\CMSIS\Device\ST\STM32F0xx\Include</state>
+                    <state>C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\CMSIS\Device\ST\STM32F0xx\Include</state>
+                    <state>C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\CMSIS\Device\ST\STM32F0xx\Source\Templates</state>
+                    <state>C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\CMSIS\Device\ST\STM32F0xx\Source\Templates\iar</state>
+                    <state>C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc</state>
+                    <state>C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc\midi</state>
+                    <state>C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc\ProcessingData</state>
+                    <state>C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\rsc</state>
+                    <state>C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\rsc\ProcesingInputData</state>
+                    <state>C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\rsc\midi</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -780,7 +780,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$TOOLKIT_DIR$\config\linker\ST\stm32f051x8.icf</state>
+                    <state>$TOOLKIT_DIR$\config\linker\ST\stm32f030x4.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>

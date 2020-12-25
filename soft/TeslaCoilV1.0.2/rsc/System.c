@@ -33,6 +33,7 @@ void initGPIO() {
   RCC->AHBENR |= RCC_AHBENR_GPIOAEN;
   RCC->AHBENR |= RCC_AHBENR_GPIOBEN;
 
+  BT_RES_PORT->MODER |= (1 << (2 * BT_RES_PIN));
   LED_M_PORT->MODER |= (1 << (2 * LED_M_PIN));
   LED_P_PORT->MODER |= (1 << (2 * LED_P_PIN));
   OUT_PORT->MODER |= (1 << (2 * OUT_PIN));

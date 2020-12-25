@@ -1,8 +1,12 @@
 #include "Protection.h"
 
 uint16_t valuesAdc[2], minVoltage = 0, minTemp = 0, maxTemp = 0;
-boolean isTermalProtect = false, isLowVoltageProtect = false;
+boolean isTermalProtect = false, isLowVoltageProtect = false, isOffOutPin = false;
 uint8_t countTransVal = 0;
+
+void setEnableOutPin() {
+  if(isOffOutPin == false) OUT_PORT->BSRR |= (1 << OUT_PIN);
+}
 
 void initProtection() {
   RCC->APB2ENR |= RCC_APB2ENR_ADC1EN;
@@ -115,4 +119,9 @@ void processProtection() {
       isLowVoltageProtect = false;
     }
   }
+  
+  
+  
+  if(isLowVoltageProtect == true || isTermalProtect == true) isOffOutPin = true;
+  else isOffOutPin = false;
 }

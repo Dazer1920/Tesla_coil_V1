@@ -4,6 +4,7 @@
 #include "System.h"
 #include "Util.h"
 #include "ProcessMidiEvents.h"
+#include "Protection.h"
 
 typedef enum {
   DISABLE_ADSR = 0,

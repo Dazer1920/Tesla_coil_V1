@@ -1,9 +1,9 @@
 Led.pbi: \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\rsc\Led.c \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc\Led.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc/System.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\CMSIS\Device\ST\STM32F0xx\Include/stm32f030x6.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\rsc\Led.c \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc\Led.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc/System.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\CMSIS\Device\ST\STM32F0xx\Include/stm32f030x6.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\CMSIS\Core\Include\core_cm0.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdint.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\ycheck.h \
@@ -15,29 +15,29 @@ Led.pbi: \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\CMSIS\Core\Include/cmsis_compiler.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\CMSIS\Core\Include\cmsis_iccarm.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\iccarm_builtin.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\CMSIS\Device\ST\STM32F0xx\Include/system_stm32f0xx.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc/Protection.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc\ProcessingData\ProcessSystemData.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc\System.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc\Serial.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc/BluetoothConfig.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\CMSIS\Device\ST\STM32F0xx\Include/system_stm32f0xx.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc/Protection.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc\ProcessingData\ProcessSystemData.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc\System.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc\Serial.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc/BluetoothConfig.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\string.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\ysizet.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Product_string.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc/Serial.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc/Led.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc\ProcessingData\ProcessInterrupterData.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc\Timers.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc/Util.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc\midi\ProcessMidiEvents.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc\midi/Player.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc\ProcessingData\ProcessMidiData.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc\midi\Player.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc\Util.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc\midi\MidiControllers.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc\midi/ProcessMidiEvents.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc/Timers.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc/Serial.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc/Led.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc\ProcessingData\ProcessInterrupterData.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc\Timers.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc/Util.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc\midi\ProcessMidiEvents.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc\midi/Player.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc\ProcessingData\ProcessMidiData.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc\midi\Player.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc\Util.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc\midi\MidiControllers.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc\midi/ProcessMidiEvents.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc/Timers.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\Math.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_float_setup.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdio.h \
-  C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\inc\Protection.h
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc\Protection.h

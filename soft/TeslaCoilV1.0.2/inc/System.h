@@ -17,6 +17,9 @@ typedef enum {
 #define OUT_PIN 4
 #define OUT_PORT GPIOA
 
+#define BT_RES_PORT GPIOB
+#define BT_RES_PIN 1
+
 void initClock();
 void initSystemTimer();
 void initGPIO();

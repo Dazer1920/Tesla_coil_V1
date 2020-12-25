@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\settings\TeslaV.1.0.2.Debug.general.xcl" --backend -f "C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\settings\TeslaV.1.0.2.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\settings\TeslaV.1.0.2.Debug.general.xcl" --backend -f "C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\settings\TeslaV.1.0.2.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\settings\TeslaV.1.0.2.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\Dazer\Documents\myProjects\TeslaCoilV1.0\soft\TeslaCoilV1.0.2\settings\TeslaV.1.0.2.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\settings\TeslaV.1.0.2.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\settings\TeslaV.1.0.2.Debug.driver.xcl" 
 }

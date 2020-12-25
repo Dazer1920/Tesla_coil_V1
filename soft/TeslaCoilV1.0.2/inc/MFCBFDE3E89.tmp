@@ -6,6 +6,10 @@
 #include "ProcessInterrupterData.h"
 #include "ProcessMidiData.h"
 
+extern boolean isOffOutPin;
+
+#define ENABLE_OUT_PIN if(isOffOutPin == false) OUT_PORT->BSRR |= (1 << OUT_PIN)
+
 #define TEMP_SENSOR_PORT GPIOB
 #define TEMP_SENSOR_PIN 1
 #define TEMP_SENSOR_ADC_CHANNEL ADC_CHSELR_CHSEL9
@@ -22,8 +26,6 @@
 #define MIN_POWER_VOLTAGE 4.5f
 #define MIN_TEMPERATURE 30.5f
 #define MAX_TEMPERATURE 75.5f
-
-void setEnableOutPin();
 
 uint16_t getPowerVoltage();
 uint16_t getTemperatureValue();

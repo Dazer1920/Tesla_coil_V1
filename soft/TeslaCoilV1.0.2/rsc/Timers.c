@@ -152,14 +152,14 @@ void processTimer(Timer *timer) {
       timer->pulseDel = timer->pulse;
     }
     
-    OUT_PORT->ODR |= (1 << OUT_PIN);
+    setEnableOutPin();
     delayUs(timer->pulseDel);
-    OUT_PORT->ODR &= ~(1 << OUT_PIN);
+    OUT_PORT->BRR |= (1 << OUT_PIN);
     
     timer->tim->ARR = timer->periodArr;
     if(timer->enable == false) {
       timer->tim->DIER &= ~TIM_DIER_UIE;
-      OUT_PORT->ODR &= ~(1 << OUT_PIN);
+      OUT_PORT->BRR |= (1 << OUT_PIN);
     }
   }
 }
