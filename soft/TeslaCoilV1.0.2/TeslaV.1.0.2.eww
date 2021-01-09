@@ -4,10 +4,10 @@
         <path>$WS_DIR$\..\..\..\..\myProjects\BluetoothChronograph\EWARM\BluetoothChronograph.ewp</path>
     </project>
     <project>
-        <path>$WS_DIR$\TeslaV.1.0.2.ewp</path>
+        <path>$WS_DIR$\..\..\..\AirsoftControlUnit\Soft\BettaVersion\ControlUnitBetta.ewp</path>
     </project>
     <project>
-        <path>$WS_DIR$\..\..\..\..\..\Desktop\Test\Test.ewp</path>
+        <path>$WS_DIR$\TeslaV.1.0.2.ewp</path>
     </project>
     <batchBuild />
 </workspace>
