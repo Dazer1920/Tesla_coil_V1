@@ -8,13 +8,13 @@ typedef enum {
   true
 } boolean;
 
-#define LED_P_PIN 1
+#define LED_P_PIN 6
 #define LED_P_PORT GPIOA
 
-#define LED_M_PIN 0
+#define LED_M_PIN 7
 #define LED_M_PORT GPIOA
 
-#define OUT_PIN 4
+#define OUT_PIN 1
 #define OUT_PORT GPIOA
 
 #define BT_RES_PORT GPIOB
@@ -25,5 +25,7 @@ void initSystemTimer();
 void initGPIO();
 
 void SystemError();
+
+void delayMs(uint32_t milis);
 
 #endif // _SYSTEM_H

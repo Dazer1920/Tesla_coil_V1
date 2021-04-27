@@ -78,7 +78,7 @@
                 </option>
                 <option>
                     <name>OGChipSelectEditMenu</name>
-                    <state>STM32F030F4	ST STM32F030F4</state>
+                    <state>STM32F042F4	ST STM32F042F4</state>
                 </option>
                 <option>
                     <name>GenLowLevelInterface</name>
@@ -138,7 +138,7 @@
                 </option>
                 <option>
                     <name>GFPUDeviceSlave</name>
-                    <state>STM32F030F4	ST STM32F030F4</state>
+                    <state>STM32F042F4	ST STM32F042F4</state>
                 </option>
                 <option>
                     <name>FPU2</name>
@@ -224,7 +224,7 @@
                 </option>
                 <option>
                     <name>CCDefines</name>
-                    <state>STM32F030x6</state>
+                    <state>STM32F042x6</state>
                 </option>
                 <option>
                     <name>CCPreprocFile</name>
@@ -780,7 +780,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$TOOLKIT_DIR$\config\linker\ST\stm32f030x4.icf</state>
+                    <state>$TOOLKIT_DIR$\config\linker\ST\stm32f042x4.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -1060,6 +1060,11 @@
         </settings>
         <settings>
             <name>BILINK</name>
+            <archiveVersion>0</archiveVersion>
+            <data />
+        </settings>
+        <settings>
+            <name>Coder</name>
             <archiveVersion>0</archiveVersion>
             <data />
         </settings>
@@ -2118,6 +2123,11 @@
             <archiveVersion>0</archiveVersion>
             <data />
         </settings>
+        <settings>
+            <name>Coder</name>
+            <archiveVersion>0</archiveVersion>
+            <data />
+        </settings>
     </configuration>
     <group>
         <name>inc</name>
@@ -2206,7 +2216,7 @@
             <name>$PROJ_DIR$\rsc\Serial.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\CMSIS\Device\ST\STM32F0xx\Source\Templates\iar\startup_stm32f030x6.s</name>
+            <name>$PROJ_DIR$\CMSIS\Device\ST\STM32F0xx\Source\Templates\iar\startup_stm32f042x6.s</name>
         </file>
         <file>
             <name>$PROJ_DIR$\rsc\System.c</name>

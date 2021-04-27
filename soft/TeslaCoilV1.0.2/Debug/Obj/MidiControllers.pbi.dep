@@ -3,7 +3,7 @@ MidiControllers.pbi: \
   C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc\midi\MidiControllers.h \
   C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\inc\System.h \
   C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h \
-  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\CMSIS\Device\ST\STM32F0xx\Include/stm32f030x6.h \
+  C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\CMSIS\Device\ST\STM32F0xx\Include/stm32f042x6.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\CMSIS\Core\Include\core_cm0.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdint.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\ycheck.h \

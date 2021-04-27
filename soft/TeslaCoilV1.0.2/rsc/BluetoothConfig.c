@@ -3,20 +3,20 @@
 #define NUMBER_AT_COMMANDS 2
 
 uint8_t ATCommands[][25] = { // config commands
-  {"AT+NAMETeslaCoil"},
+  {"AT+NAMETeslaCoil\r\n"},
   //{"AT+ENABLEIND0\r\n"},
-  {"AT+BAUD7"}
+  {"AT+BAUD7\r\n"}
 };
 
 #define NUMBER_BAUDS 15
 
 uint32_t baudsTable[] = {
   57600,
+  9600,
   600,
   1200,
   2400,
   4800,
-  9600,
   14400,
   19200,
   38400,
@@ -115,6 +115,8 @@ void cofigEnd() {
 
 void configurate() {
   if(countCommands >= NUMBER_AT_COMMANDS) {
+    BT_RES_PORT->ODR &= ~(1 << BT_RES_PIN);
+    delayMs(1000);
     NVIC_SystemReset();
   }
   

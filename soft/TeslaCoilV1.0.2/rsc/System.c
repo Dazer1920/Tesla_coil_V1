@@ -34,8 +34,13 @@ void initGPIO() {
   RCC->AHBENR |= RCC_AHBENR_GPIOBEN;
 
   BT_RES_PORT->MODER |= (1 << (2 * BT_RES_PIN));
+  BT_RES_PORT->OTYPER |= (1 << BT_RES_PIN);
+  BT_RES_PORT->PUPDR |= (1 << (2 * BT_RES_PIN));
+  BT_RES_PORT->ODR |= (1 << BT_RES_PIN);
+
   LED_M_PORT->MODER |= (1 << (2 * LED_M_PIN));
   LED_P_PORT->MODER |= (1 << (2 * LED_P_PIN));
+  
   OUT_PORT->MODER |= (1 << (2 * OUT_PIN));
   OUT_PORT->ODR &= ~(1 << OUT_PIN);
 }
@@ -48,4 +53,16 @@ void SystemError() {
   TIM3->CR1 &= ~TIM_CR1_CEN;
   
   __disable_irq();
+}
+
+void delayMs(uint32_t milis) {
+  uint32_t ticks_delay = milis * 1000UL;
+  
+  uint32_t ticks_tim = TIM3->CNT;
+  while(ticks_delay) {
+    if(TIM3->CNT != ticks_tim){
+      ticks_tim = TIM3->CNT;
+       ticks_delay--;
+    }
+  }
 }

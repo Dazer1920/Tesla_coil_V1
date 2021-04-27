@@ -24,7 +24,7 @@ public class Tesla extends Bluetooth {
         return tesla;
     }
 
-    private Tesla() {}
+    private Tesla() { }
 
     public void setHandler(Handler h) {
         currentHandler = h;
