@@ -1,0 +1,29 @@
+#include "System.h"
+
+void initClock() {
+  CLK->CKDIVR = 0;
+  CLK->PCKENR1 |= CLK_PCKENR1_TIM1 | CLK_PCKENR1_TIM4 |
+    CLK_PCKENR1_TIM2 | CLK_PCKENR1_UART1;
+
+  CLK->PCKENR2 |= CLK_PCKENR2_ADC;
+}
+
+void initGpio() {
+  LED_PORT->DDR |= (1 << LED_PIN);
+  LED_PORT->CR1 |= (1 << LED_PIN);
+  LED_PORT->CR2 |= (1 << LED_PIN);
+
+  OUT_PORT->DDR |= (1 << OUT_PIN);
+  OUT_PORT->CR1 |= (1 << OUT_PIN);
+  OUT_PORT->CR2 |= (1 << OUT_PIN);
+
+  DISCONNECT_PORT->DDR &= ~(1 << DISCONNECT_PIN);
+  DISCONNECT_PORT->CR1 &= ~(1 << DISCONNECT_PIN);
+  DISCONNECT_PORT->CR2 &= ~(1 << DISCONNECT_PIN);
+}
+
+void initSystemTimer() {
+  TIM4->PSCR = 0x07;
+  TIM4->CR1 |= TIM4_CR1_URS | TIM4_CR1_CEN;
+  TIM4->ARR = 125;
+}

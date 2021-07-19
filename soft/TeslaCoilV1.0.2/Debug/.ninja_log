@@ -1,0 +1,19 @@
+# ninja log v5
+1	421	6448467881178559	C:/Users/Dazer/Documents/GitHub/Tesla_coil_V1/soft/TeslaCoilV1.0.2/Debug/Obj/rsc/startup_stm32f042x6.o	35f0b03317b121e2
+425	781	6448467884693264	C:/Users/Dazer/Documents/GitHub/Tesla_coil_V1/soft/TeslaCoilV1.0.2/Debug/Obj/rsc/ProcessingData/ProcessSystemData.o	3e4c919b4d9e8a20
+382	811	6448467884884965	C:/Users/Dazer/Documents/GitHub/Tesla_coil_V1/soft/TeslaCoilV1.0.2/Debug/Obj/rsc/ProcessingData/ProcessInterrupterData.o	e60e9e1c8aa5cafb
+379	827	6448467884904890	C:/Users/Dazer/Documents/GitHub/Tesla_coil_V1/soft/TeslaCoilV1.0.2/Debug/Obj/rsc/midi/MidiControllers.o	218dbc3f80ffb5a9
+375	855	6448467885194162	C:/Users/Dazer/Documents/GitHub/Tesla_coil_V1/soft/TeslaCoilV1.0.2/Debug/Obj/rsc/midi/Player.o	cdb6b5923b4670ee
+795	1068	6448467887554099	C:/Users/Dazer/Documents/GitHub/Tesla_coil_V1/soft/TeslaCoilV1.0.2/Debug/Obj/rsc/ProcessingData/ProcessMidiData.o	78369dd6fff10992
+867	1104	6448467887932839	C:/Users/Dazer/Documents/GitHub/Tesla_coil_V1/soft/TeslaCoilV1.0.2/Debug/Obj/rsc/System.o	ff8228761bcd79f
+823	1149	6448467888344746	C:/Users/Dazer/Documents/GitHub/Tesla_coil_V1/soft/TeslaCoilV1.0.2/Debug/Obj/rsc/BluetoothConfig.o	2da1ff71405584d6
+837	1181	6448467888643941	C:/Users/Dazer/Documents/GitHub/Tesla_coil_V1/soft/TeslaCoilV1.0.2/Debug/Obj/rsc/midi/ProcessMidiEvents.o	c93c12f6058ee27c
+1076	1283	6448467889731052	C:/Users/Dazer/Documents/GitHub/Tesla_coil_V1/soft/TeslaCoilV1.0.2/Debug/Obj/rsc/system_stm32f0xx.o	9208b8de222ccd25
+1114	1373	6448467890588749	C:/Users/Dazer/Documents/GitHub/Tesla_coil_V1/soft/TeslaCoilV1.0.2/Debug/Obj/rsc/Led.o	9a042e06366c88ba
+1161	1475	6448467891628288	C:/Users/Dazer/Documents/GitHub/Tesla_coil_V1/soft/TeslaCoilV1.0.2/Debug/Obj/rsc/Protection.o	cf60f8bf53239b67
+1192	1557	6448467892406548	C:/Users/Dazer/Documents/GitHub/Tesla_coil_V1/soft/TeslaCoilV1.0.2/Debug/Obj/rsc/Serial.o	77fbe1fa07b19871
+1292	1581	6448467892643990	C:/Users/Dazer/Documents/GitHub/Tesla_coil_V1/soft/TeslaCoilV1.0.2/Debug/Obj/rsc/Util.o	f7a2e5af13dd992f
+1384	1599	6448467892781858	C:/Users/Dazer/Documents/GitHub/Tesla_coil_V1/soft/TeslaCoilV1.0.2/Debug/Obj/main.o	8d4346dc44995514
+1489	1761	6448467894515903	C:/Users/Dazer/Documents/GitHub/Tesla_coil_V1/soft/TeslaCoilV1.0.2/Debug/Obj/rsc/Timers.o	b143c54c16ae206b
+1769	2236	6448467899255480	C:/Users/Dazer/Documents/GitHub/Tesla_coil_V1/soft/TeslaCoilV1.0.2/Debug/Exe/TeslaV.1.0.2.out	a55905ef62b078e6
+2246	2331	6448467900288031	C:/Users/Dazer/Documents/GitHub/Tesla_coil_V1/soft/TeslaCoilV1.0.2/Debug/Exe/TeslaV.1.0.2.hex	db76a443ed951db8

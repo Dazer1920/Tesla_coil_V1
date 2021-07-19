@@ -1,421 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-    <fileVersion>4</fileVersion>
-    <fileChecksum>4137122260</fileChecksum>
+    <fileVersion>5</fileVersion>
+    <fileChecksum>1403216609</fileChecksum>
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\inc\ProcessingData\ProcessInterrupterData.h</file>
-            <file>$PROJ_DIR$\inc\ProcessingData\ProcessSystemData.h</file>
-            <file>$PROJ_DIR$\rsc\midi\ProcessMidiEvents.c</file>
-            <file>$PROJ_DIR$\rsc\BluetoothConfig.c</file>
-            <file>$PROJ_DIR$\rsc\System.c</file>
-            <file>$PROJ_DIR$\inc\Led.h</file>
-            <file>$PROJ_DIR$\inc\BluetoothConfig.h</file>
-            <file>$PROJ_DIR$\inc\Serial.h</file>
-            <file>$PROJ_DIR$\inc\midi\MidiControllers.h</file>
-            <file>$PROJ_DIR$\rsc\midi\Player.c</file>
-            <file>$PROJ_DIR$\inc\Util.h</file>
-            <file>$PROJ_DIR$\rsc\ProcesingInputData\ProcessMidiData.c</file>
-            <file>$PROJ_DIR$\rsc\ProcesingInputData\ProcessSystemData.c</file>
-            <file>$PROJ_DIR$\rsc\Serial.c</file>
-            <file>$PROJ_DIR$\inc\midi\Player.h</file>
-            <file>$PROJ_DIR$\inc\ProcessingData\ProcessMidiData.h</file>
-            <file>$PROJ_DIR$\inc\System.h</file>
-            <file>$PROJ_DIR$\rsc\Led.c</file>
-            <file>$PROJ_DIR$\inc\midi\ProcessMidiEvents.h</file>
-            <file>$PROJ_DIR$\inc\Timers.h</file>
-            <file>$PROJ_DIR$\rsc\midi\MidiControllers.c</file>
-            <file>$PROJ_DIR$\rsc\Protection.c</file>
-            <file>$PROJ_DIR$\CMSIS\Device\ST\STM32F0xx\Source\Templates\iar\startup_stm32f042x6.s</file>
-            <file>$PROJ_DIR$\rsc\ProcesingInputData\ProcessInterrupterData.c</file>
-            <file>$PROJ_DIR$\CMSIS\Device\ST\STM32F0xx\Source\Templates\system_stm32f0xx.c</file>
-            <file>$PROJ_DIR$\rsc\Timers.c</file>
-            <file>$PROJ_DIR$\inc\Protection.h</file>
             <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
-            <file>$PROJ_DIR$\Debug\Obj\BluetoothConfig.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_float_setup.h</file>
-            <file>$PROJ_DIR$\CMSIS\Device\ST\STM32F0xx\Include\stm32f042x6.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\ProcessMidiEvents.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\Player.xcl</file>
-            <file>$PROJ_DIR$\Debug\Obj\ProcessInterrupterData.xcl</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\system_stm32f0xx.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\Timers.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\ProcessMidiData.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\ProcessMidiData.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\Util.xcl</file>
-            <file>$PROJ_DIR$\Debug\Obj\ProcessSystemData.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\Led.xcl</file>
-            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$PROJ_DIR$\CMSIS\Device\ST\STM32F0xx\Include\system_stm32f0xx.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\startup_stm32f042x6.o</file>
-            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-            <file>$PROJ_DIR$\Debug\Obj\Timers.o</file>
-            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\core_cm0.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\Protection.o</file>
-            <file>$PROJ_DIR$\main.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\MidiControllers.xcl</file>
-            <file>$PROJ_DIR$\rsc\Util.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\startup_stm32f030x6.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\MidiControllers.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\ProcessSystemData.xcl</file>
-            <file>$TOOLKIT_DIR$\inc\c\math.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\Serial.xcl</file>
-            <file>$PROJ_DIR$\Debug\Obj\Protection.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\Protection.xcl</file>
-            <file>$PROJ_DIR$\Debug\Obj\Util.o</file>
-            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_version.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\MidiControllers.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\System.xcl</file>
-            <file>$TOOLKIT_DIR$\config\linker\ST\stm32f042x4.icf</file>
-            <file>$PROJ_DIR$\Debug\List\TeslaV.1.0.2.map</file>
-            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_iccarm.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\System.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\Led.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\ProcessInterrupterData.__cstat.et</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$PROJ_DIR$\Debug\Exe\TeslaV.1.0.2.hex</file>
-            <file>$PROJ_DIR$\Debug\Obj\Led.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\Player.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\Serial.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Exe\TeslaV.1.0.2.out</file>
-            <file>$PROJ_DIR$\Debug\Obj\System.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\Timers.xcl</file>
-            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_compiler.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\Util.__cstat.et</file>
             <file>$PROJ_DIR$\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\ProcessMidiEvents.xcl</file>
-            <file>$PROJ_DIR$\CMSIS\Device\ST\STM32F0xx\Source\Templates\iar\startup_stm32f030x6.s</file>
-            <file>$PROJ_DIR$\Debug\Obj\Serial.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\BluetoothConfig.xcl</file>
-            <file>$PROJ_DIR$\Debug\Obj\ProcessInterrupterData.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\ProcessMidiEvents.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\ProcessMidiData.xcl</file>
-            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-            <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\ProcessSystemData.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.xcl</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\system_stm32f0xx.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\system_stm32f0xx.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\CMSIS\Device\ST\STM32F0xx\Include\stm32f042x6.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\rsc\ProcessingData\ProcessSystemData.o</file>
+            <file>$PROJ_DIR$\Debug\List\TeslaV.1.0.2.map</file>
+            <file>$PROJ_DIR$\Debug\Obj\rsc\Util.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\rsc\ProcessingData\ProcessInterrupterData.o</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\CMSIS\Device\ST\STM32F0xx\Include\system_stm32f0xx.h</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\rsc\midi\Player.o</file>
+            <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\rsc\system_stm32f0xx.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\rsc\Protection.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\rsc\Led.o</file>
             <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\BluetoothConfig.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\Player.o</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_iccarm.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\aarch32\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\rsc\midi\ProcessMidiEvents.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\rsc\System.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\TeslaV.1.0.2.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\rsc\midi\MidiControllers.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\rsc\ProcessingData\ProcessMidiData.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\core_cm0.h</file>
+            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
+            <file>$PROJ_DIR$\inc\midi\ProcessMidiEvents.h</file>
+            <file>$PROJ_DIR$\inc\midi\MidiControllers.h</file>
+            <file>$PROJ_DIR$\inc\BluetoothConfig.h</file>
+            <file>$PROJ_DIR$\inc\Protection.h</file>
+            <file>$PROJ_DIR$\inc\ProcessingData\ProcessSystemData.h</file>
+            <file>$PROJ_DIR$\inc\System.h</file>
+            <file>$PROJ_DIR$\inc\ProcessingData\ProcessMidiData.h</file>
+            <file>$PROJ_DIR$\inc\midi\Player.h</file>
+            <file>$PROJ_DIR$\inc\Serial.h</file>
+            <file>$PROJ_DIR$\inc\Led.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_float_setup.h</file>
+            <file>$PROJ_DIR$\inc\ProcessingData\ProcessInterrupterData.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\rsc\ProcesingInputData\ProcessSystemData.c</file>
+            <file>$PROJ_DIR$\rsc\Protection.c</file>
+            <file>$PROJ_DIR$\Debug\Exe\TeslaV.1.0.2.hex</file>
+            <file>$PROJ_DIR$\rsc\Led.c</file>
+            <file>$PROJ_DIR$\inc\Timers.h</file>
+            <file>$PROJ_DIR$\CMSIS\Device\ST\STM32F0xx\Source\Templates\system_stm32f0xx.c</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\rsc\Timers.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\rsc\startup_stm32f042x6.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\rsc\midi\MidiControllers.c</file>
+            <file>$PROJ_DIR$\rsc\BluetoothConfig.c</file>
+            <file>$PROJ_DIR$\rsc\Serial.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\rsc\startup_stm32f042x6.o.rsp</file>
+            <file>$PROJ_DIR$\rsc\midi\ProcessMidiEvents.c</file>
+            <file>$PROJ_DIR$\rsc\ProcesingInputData\ProcessInterrupterData.c</file>
+            <file>$PROJ_DIR$\CMSIS\Device\ST\STM32F0xx\Source\Templates\iar\startup_stm32f042x6.s</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_version.h</file>
+            <file>$PROJ_DIR$\rsc\midi\Player.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\rsc\BluetoothConfig.o</file>
+            <file>$PROJ_DIR$\rsc\Util.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\rsc\Serial.o</file>
+            <file>$PROJ_DIR$\rsc\ProcesingInputData\ProcessMidiData.c</file>
+            <file>$PROJ_DIR$\inc\Util.h</file>
+            <file>$PROJ_DIR$\rsc\System.c</file>
+            <file>$TOOLKIT_DIR$\config\linker\ST\stm32f042x4.icf</file>
+            <file>$PROJ_DIR$\rsc\Timers.c</file>
         </outputs>
         <file>
-            <name>$PROJ_DIR$\rsc\midi\ProcessMidiEvents.c</name>
+            <name>$PROJ_DIR$\Debug\Exe\TeslaV.1.0.2.out</name>
             <outputs>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 92</file>
+                    <name>OBJCOPY</name>
+                    <file> 46</file>
                 </tool>
                 <tool>
-                    <name>__cstat</name>
-                    <file> 33</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 87</file>
+                    <name>ILINK</name>
+                    <file> 7</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 18 16 86 32 51 102 46 96 75 99 36 66 84 71 30 47 14 19 10 61 31 26 1 7 6 58 94 82 5 0 15 8 29</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\rsc\BluetoothConfig.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 103</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 28</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 90</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 6 16 86 32 51 102 46 96 75 99 36 66 84 71 30 47 58 94 82 7 29 10 18 14 19 26 1 0 15 8 61 31 5</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\rsc\System.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 81</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 72</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 68</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 16 86 32 51 102 46 96 75 99 36 66 84 71 30 47</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\rsc\midi\Player.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 104</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 78</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 34</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 14 16 86 32 51 102 46 96 75 99 36 66 84 71 30 47 19 10 18 61 31 26 1 7 6 58 94 82 5 0 15 8 29</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\rsc\ProcesingInputData\ProcessMidiData.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 39</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 41</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 93</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 15 16 86 32 51 102 46 96 75 99 36 66 84 71 30 47 19 10 18 14 7 6 58 94 82 5 26 1 0 29 61 31 8</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\rsc\ProcesingInputData\ProcessSystemData.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 97</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 43</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 60</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 1 16 86 32 51 102 46 96 75 99 36 66 84 71 30 47 7 6 58 94 82 5 26 0 19 10 18 14 15 8 61 31 29</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\rsc\Serial.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 89</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 79</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 62</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 7 16 86 32 51 102 46 96 75 99 36 66 84 71 30 47 6 58 94 82 5 26 1 0 19 10 18 14 15 8 61 31 29</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\rsc\Led.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 73</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 77</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 44</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 5 16 86 32 51 102 46 96 75 99 36 66 84 71 30 47 26 1 7 6 58 94 82 0 19 10 18 14 15 8 61 31 29</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\rsc\midi\MidiControllers.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 67</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 59</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 54</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 8 16 86 32 51 102 46 96 75 99 36 66 84 71 30 47 19 10 18 14 7 6 58 94 82 5 26 1 0 15 29 61 31</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\rsc\Protection.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 52</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 63</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 64</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 26 16 86 32 51 102 46 96 75 99 36 66 84 71 30 47 1 7 6 58 94 82 5 0 19 10 18 14 15 8 61 31 29</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\CMSIS\Device\ST\STM32F0xx\Source\Templates\iar\startup_stm32f042x6.s</name>
-            <outputs>
-                <tool>
-                    <name>AARM</name>
-                    <file> 48</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\rsc\ProcesingInputData\ProcessInterrupterData.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 91</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 74</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 35</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 0 16 86 32 51 102 46 96 75 99 36 66 84 71 30 47 19 10 18 14 7 6 58 94 82 5 26 1 15 8 29 61 31</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\CMSIS\Device\ST\STM32F0xx\Source\Templates\system_stm32f0xx.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 37</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 100</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 101</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 86 32 51 102 46 96 75 99 36 66 84 71 30 47</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\rsc\Timers.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 50</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 38</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 83</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 19 16 86 32 51 102 46 96 75 99 36 66 84 71 30 47 10 18 14 7 6 58 94 82 5 26 1 0 15 8 29 61 31</file>
+                    <name>ILINK</name>
+                    <file> 72 14 30 0 10 43 66 17 9 27 6 16 68 22 51 8 26 13 21 52 15</file>
                 </tool>
             </inputs>
         </file>
@@ -424,30 +104,196 @@
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 70 80</file>
+                    <file> 7 25</file>
                 </tool>
             </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\rsc\ProcesingInputData\ProcessSystemData.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 6</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12 19 62 29 3 1 24 28 41 23 20 18 64 65 4 57 53 5 2 11 33 40 42 37 35 34 39 36 48 70 32 38 31</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\rsc\Protection.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 16</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12 19 62 29 3 1 24 28 41 23 20 18 64 65 4 57 53 5 2 11 33 40 42 37 35 34 39 36 48 70 32 38 31</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\TeslaV.1.0.2.hex</name>
+            <inputs>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\rsc\Led.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 17</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12 19 62 29 3 1 24 28 41 23 20 18 64 65 4 57 53 5 2 11 33 40 42 37 35 34 39 36 48 70 32 38 31</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\CMSIS\Device\ST\STM32F0xx\Source\Templates\system_stm32f0xx.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 15</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12 19 62 29 3 1 24 20 18 4 53 5 2 11</file>
+                </tool>
+            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\main.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 40</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 57</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 98</file>
+                    <file> 43</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 16 86 32 51 102 46 96 75 99 36 66 84 71 30 47 7 6 58 94 82 5 26 1 0 19 10 18 14 15 8 61 31 29</file>
+                    <file> 12 19 62 29 3 1 24 28 41 23 20 18 64 65 4 57 53 5 2 11 33 40 42 37 35 34 39 36 48 70 32 38 31</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\rsc\midi\MidiControllers.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 26</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12 19 62 29 3 1 24 28 41 23 20 18 64 65 4 57 53 5 2 11 33 40 42 37 35 34 39 36 48 70 32 38 31</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\rsc\BluetoothConfig.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 66</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12 19 62 29 3 1 24 28 41 23 20 18 64 65 4 57 53 5 2 11 33 40 42 37 35 34 39 36 48 70 32 38 31</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\rsc\Serial.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 68</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12 19 62 29 3 1 24 28 41 23 20 18 64 65 4 57 53 5 2 11 33 40 42 37 35 34 39 36 48 70 32 38 31</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\rsc\midi\ProcessMidiEvents.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 21</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12 19 62 29 3 1 24 28 41 23 20 18 64 65 4 57 53 5 2 11 33 40 42 37 35 34 39 36 48 70 32 38 31</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\rsc\ProcesingInputData\ProcessInterrupterData.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 9</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12 19 62 29 3 1 24 28 41 23 20 18 64 65 4 57 53 5 2 11 33 40 42 37 35 34 39 36 48 70 32 38 31</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\CMSIS\Device\ST\STM32F0xx\Source\Templates\iar\startup_stm32f042x6.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 52</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 58</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\rsc\midi\Player.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 13</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12 19 62 29 3 1 24 28 41 23 20 18 64 65 4 57 53 5 2 11 33 40 42 37 35 34 39 36 48 70 32 38 31</file>
                 </tool>
             </inputs>
         </file>
@@ -456,52 +302,65 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 65</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 85</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 42</file>
+                    <file> 8</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 10 16 86 32 51 102 46 96 75 99 36 66 84 71 30 47 18 14 19 26 1 7 6 58 94 82 5 0 15 8 29 61 31</file>
+                    <file> 12 19 62 29 3 1 24 28 41 23 20 18 64 65 4 57 53 5 2 11 33 40 42 37 35 34 39 36 48 70 32 38 31</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\Debug\Exe\TeslaV.1.0.2.out</name>
+            <name>$PROJ_DIR$\rsc\ProcesingInputData\ProcessMidiData.c</name>
             <outputs>
                 <tool>
-                    <name>ILINK</name>
-                    <file> 70</file>
-                </tool>
-                <tool>
-                    <name>OBJCOPY</name>
-                    <file> 76</file>
+                    <name>ICCARM</name>
+                    <file> 27</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
-                    <name>ILINK</name>
-                    <file> 69 103 73 40 67 104 91 39 92 97 52 89 48 81 37 50 65 49 27 45 95</file>
+                    <name>ICCARM</name>
+                    <file> 12 19 62 29 3 1 24 28 41 23 20 18 64 65 4 57 53 5 2 11 33 40 42 37 35 34 39 36 48 70 32 38 31</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\CMSIS\Device\ST\STM32F0xx\Source\Templates\iar\startup_stm32f030x6.s</name>
+            <name>$PROJ_DIR$\rsc\System.c</name>
             <outputs>
                 <tool>
-                    <name>AARM</name>
-                    <file> 56</file>
+                    <name>ICCARM</name>
+                    <file> 22</file>
                 </tool>
             </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12 19 62 29 3 1 24 20 18 4 53 5 2 11 36</file>
+                </tool>
+            </inputs>
         </file>
+        <file>
+            <name>$PROJ_DIR$\rsc\Timers.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 51</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12 19 62 29 3 1 24 28 41 23 20 18 64 65 4 57 53 5 2 11 33 40 42 37 35 34 39 36 48 70 32 38 31</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
     </configuration>
     <configuration>
         <name>Release</name>
