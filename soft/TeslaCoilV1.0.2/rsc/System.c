@@ -1,6 +1,6 @@
 #include "System.h"
 
-boolean isError = false;
+bool isError = false;
 
 void initClock() {
   if((RCC->CFGR & RCC_CFGR_SWS) != RCC_CFGR_SWS_HSI) {
@@ -34,8 +34,8 @@ void initGPIO() {
   RCC->AHBENR |= RCC_AHBENR_GPIOBEN;
 
   BT_RES_PORT->MODER |= (1 << (2 * BT_RES_PIN));
-  BT_RES_PORT->OTYPER |= (1 << BT_RES_PIN);
-  BT_RES_PORT->PUPDR |= (1 << (2 * BT_RES_PIN));
+  //BT_RES_PORT->OTYPER |= (1 << BT_RES_PIN);
+  //BT_RES_PORT->PUPDR |= (1 << (2 * BT_RES_PIN));
   BT_RES_PORT->ODR |= (1 << BT_RES_PIN);
 
   LED_M_PORT->MODER |= (1 << (2 * LED_M_PIN));
@@ -49,6 +49,7 @@ void SystemError() {
   LED_M_PORT->ODR &= ~(1 << LED_M_PIN);
   LED_P_PORT->ODR &= ~(1 << LED_P_PIN);
   OUT_PORT->ODR &= ~(1 << OUT_PIN);
+  BT_RES_PORT->ODR &= ~(1 << BT_RES_PIN);
   
   TIM3->CR1 &= ~TIM_CR1_CEN;
   

@@ -1,7 +1,7 @@
 #include "Timers.h"
 
 extern uint8_t Volume;
-extern boolean portamentoType;
+extern bool portamentoType;
 extern uint16_t portamentoTime;
 extern uint16_t AttackVal, DecayVal, SustainVal, ReleaseVal;
 
@@ -43,7 +43,7 @@ void initTimers() {
   }
 }
 
-void setEnableTimer(boolean e, uint8_t n, boolean isMidi) {
+void setEnableTimer(bool e, uint8_t n, bool isMidi) {
   Timers[n].isMidi = isMidi;
   Timers[n].tim->ARR = Timers[n].period;
   Timers[n].countTime = 0;

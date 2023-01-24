@@ -30,8 +30,8 @@ uint32_t baudsTable[] = {
 
 uint8_t countRequests = 1, countBauds = 0, countCommands = 0;
 
-boolean isBluetoothConfig = false;
-boolean isBluetoothConfigurate = false;
+bool isBluetoothConfig = false;
+bool isBluetoothConfigurate = false;
 
 BluetoothEvents CurrentEvent = START_CONFIG;
 
@@ -143,13 +143,13 @@ void answerConfigurate() {
 }
 
 void errorConfig() {
-  extern boolean isError;
+  extern bool isError;
   isError = true;
 }
 
 
 uint8_t countChangeConnection;
-boolean isConnected = false;
+bool isConnected = false;
 
 void Connected() {
   SetBluetoothEventTimer(CHECK_CONNECTION, 1500);
@@ -165,6 +165,7 @@ void Disconnected() {
   
   setStopMidiPlayer();
   offInterrupter();
+  setBtRes();
 }
 
 void ChangeConnection() {
@@ -177,6 +178,27 @@ void ChangeConnection() {
   
   countChangeConnection++;
   SetBluetoothEventTimer(CHECK_CONNECTION, 1500);
+}
+
+bool isBtRes = false;
+uint8_t btResCountDel = 0;
+
+void setBtRes() {
+  btResCountDel = 0;
+  isBtRes = true;
+}
+
+void processBtRes() {
+  if(isBtRes) {
+    BT_RES_PORT->ODR &= ~(1 << BT_RES_PIN);
+    btResCountDel++;
+    if(btResCountDel >= RESET_BT_TIMEOUT) {
+      btResCountDel = 0;
+      isBtRes = false;
+    }
+  } else {
+    BT_RES_PORT->ODR |= (1 << BT_RES_PIN);
+  }
 }
 
 void processBluetooth() {

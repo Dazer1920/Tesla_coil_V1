@@ -1,6 +1,6 @@
 #include "ProcessInterrupterData.h"
 
-boolean isEnableModulater = false, isEnableEnterrupter = false;
+bool isEnableModulater = false, isEnableEnterrupter = false;
 uint16_t timeOnModulater = 0, timeOffModulater = 0, CountTimeOnModulater = 0, CountTimeOffModulater = 0;
 uint8_t dutyModulater, freqMolulater;
 

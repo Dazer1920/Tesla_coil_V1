@@ -11,12 +11,19 @@
 
 #define TIME_OUT_ON_NOTE 2000 // in ms
 
-void cleareBuff(uint8_t *buff, uint8_t size);
+typedef struct {
+  uint16_t data;
+  uint8_t K;
+  uint8_t A;
+} FilterData;
+
 int16_t map(int16_t x, int16_t in_min, int16_t in_max, int16_t out_min, int16_t out_max);
 uint32_t abs(int32_t a);
 uint32_t convertData(uint8_t key);
 uint16_t convertVoltageToAdc(float voltage, float r1, float r2);
 uint16_t convertTemperatureToAdc(float val);
+
+uint16_t filterData(uint16_t data, FilterData *f);
 
 void playNotes();
 void setPitchBendTimer(uint8_t i);

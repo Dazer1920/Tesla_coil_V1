@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\Dazer\Desktop\TeslaCoilV1.0\soft\TeslaCoilV1.0\EWARM\settings\TeslaCoilV1.0.TeslaCoilV1.0.general.xcl" --backend -f "C:\Users\Dazer\Desktop\TeslaCoilV1.0\soft\TeslaCoilV1.0\EWARM\settings\TeslaCoilV1.0.TeslaCoilV1.0.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0\EWARM\settings\TeslaCoilV1.0.TeslaCoilV1.0.general.xcl" --backend -f "C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0\EWARM\settings\TeslaCoilV1.0.TeslaCoilV1.0.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\Dazer\Desktop\TeslaCoilV1.0\soft\TeslaCoilV1.0\EWARM\settings\TeslaCoilV1.0.TeslaCoilV1.0.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\Dazer\Desktop\TeslaCoilV1.0\soft\TeslaCoilV1.0\EWARM\settings\TeslaCoilV1.0.TeslaCoilV1.0.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0\EWARM\settings\TeslaCoilV1.0.TeslaCoilV1.0.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0\EWARM\settings\TeslaCoilV1.0.TeslaCoilV1.0.driver.xcl" 
 
 @echo off 
 :end

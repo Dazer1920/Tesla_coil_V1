@@ -2,7 +2,7 @@
 
 uint8_t Volume = 100;
 uint16_t portamentoTime = 0;
-boolean isUseVelocity = false, portamentoType = false;
+bool isUseVelocity = false, portamentoType = false;
 
 const uint16_t frequencyMidiNote[] = {
   8, 9, 9, 10, 10, 11, 12, 12, 13, 14, 15, 15, 16, 17, 18, 19, 21, 22, 23, 24, 26, 27, 29, 31, 33, 35, 37, 39, 41, 44, 46, 49, 52, 55, 
@@ -36,15 +36,14 @@ uint16_t convertTemperatureToAdc(float val) {
   return adc;
 }
 
+uint16_t filterData(uint16_t data, FilterData *f) {
+  f->data = (f->A * f->data + data) >> f->K;
+  return f->data;
+}
+
 uint32_t convertData(uint8_t key) {
   uint32_t data = ((~key) + key);
   return data % 10;
-}
-
-void cleareBuff(uint8_t *buff, uint8_t size) {
-  for(uint8_t i = 0; i < size; i++) {
-    buff[i] = 0;
-  }
 }
 
 uint8_t calculateCheckSum(uint8_t *buff, uint8_t len) {

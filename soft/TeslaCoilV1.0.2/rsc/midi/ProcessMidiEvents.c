@@ -61,7 +61,7 @@ void NoteOnHandler(uint8_t *event) {
     return;
   }
   
-  boolean isPlaing = false;
+  bool isPlaing = false;
   for(uint8_t i = 0; i < NUMBER_NOTES; i++) {
     if(notes[i].note == event[1] && notes[i].isPlaing == true) {
       isPlaing = true;

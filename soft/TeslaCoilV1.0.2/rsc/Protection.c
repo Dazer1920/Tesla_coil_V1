@@ -1,11 +1,13 @@
 #include "Protection.h"
 
 uint16_t valuesAdc[2], minVoltage = 0, minTemp = 0, maxTemp = 0;
-boolean isTermalProtect = false, isLowVoltageProtect = false, isOffOutPin = false;
+bool isTermalProtect = false, isLowVoltageProtect = false, isOffOutPin = false, TriggerOCD = false, TripOCD = false;
 uint8_t countTransVal = 0;
 
+FilterData voltageFilter, temperatureFilter;
+
 void setEnableOutPin() {
-  if(isOffOutPin == false) OUT_PORT->BSRR |= (1 << OUT_PIN);
+  if(isOffOutPin == false && TriggerOCD == false) OUT_PORT->BSRR |= (1 << OUT_PIN);
 }
 
 void initProtection() {
@@ -46,9 +48,42 @@ void initProtection() {
   DMA1_Channel1->CCR |= DMA_CCR_EN;
   ADC1->CR |= ADC_CR_ADSTART | ADC_CR_ADEN;
   
+  voltageFilter.A = 7;
+  voltageFilter.K = 3;
+  
+  temperatureFilter.A = 7;
+  temperatureFilter.K = 3;
+  
   minVoltage = convertVoltageToAdc(MIN_POWER_VOLTAGE, VAL_R1_DIVIDER, VAL_R2_DIVIDER);
   minTemp = convertTemperatureToAdc(MIN_TEMPERATURE);
   maxTemp = convertTemperatureToAdc(MAX_TEMPERATURE);
+  
+  GPIOA->MODER &= ~GPIO_MODER_MODER2;
+  GPIOA->PUPDR |= GPIO_PUPDR_PUPDR2_0;
+  
+  RCC->APB2ENR |= RCC_APB2ENR_SYSCFGEN;
+  
+  EXTI->IMR |= EXTI_IMR_MR2;
+  EXTI->RTSR |= EXTI_RTSR_TR2;
+  EXTI->FTSR |= EXTI_FTSR_TR2;
+  SYSCFG->EXTICR[0] |= SYSCFG_EXTICR1_EXTI2_PA;
+
+  NVIC_SetPriority(EXTI2_3_IRQn, 0);
+  NVIC_EnableIRQ(EXTI2_3_IRQn);
+}
+
+void EXTI2_3_IRQHandler() {
+  if((EXTI->IMR & EXTI_IMR_MR2) && (EXTI->PR & EXTI_PR_PR2)) {
+    EXTI->PR |= EXTI_PR_PR2;
+    
+    if(GPIOA->IDR & GPIO_IDR_2) {
+      TriggerOCD = false;
+    } else {
+      OUT_PORT->BRR |= (1 << OUT_PIN);
+      TriggerOCD = true;
+      TripOCD = true;
+    }
+  }
 }
 
 void DMA1_Channel1_IRQHandler() {
@@ -57,13 +92,8 @@ void DMA1_Channel1_IRQHandler() {
   }
 }
 
-uint16_t getPowerVoltage() {
-  return valuesAdc[0];
-}
-
-uint16_t getTemperatureValue() {
-  return valuesAdc[1];
-}
+#define getPowerVoltage() valuesAdc[1]
+#define getTemperatureValue() valuesAdc[0]
 
 void TpansmitValuesProtection() {
   uint16_t temp = 4096 - getTemperatureValue();
@@ -77,51 +107,36 @@ void TpansmitValuesProtection() {
   TransmitFrame(frame2);
 }
 
-#define NUMBER_VALUES_POWER 10
-uint16_t valuesVoltage[NUMBER_VALUES_POWER], valuesTemp[NUMBER_VALUES_POWER];
-uint8_t countVoltageValues = 0;
+uint8_t ignoreSamples = 0;
 
 void processProtection() {
-  valuesVoltage[countVoltageValues] = getPowerVoltage();
-  valuesTemp[countVoltageValues] = getTemperatureValue();
-  countVoltageValues++;
+  uint16_t volt = filterData(getPowerVoltage(), &voltageFilter);
+  uint16_t temp = filterData(getTemperatureValue(), &temperatureFilter);
   
-  if(countVoltageValues >= NUMBER_VALUES_POWER) {
-    countVoltageValues = 0;
+  if(ignoreSamples < 10) {
+    ignoreSamples++;
+    return;
+  }
     
-    uint32_t volt = 0, temp = 0;
-    for(uint8_t i = 0; i < NUMBER_VALUES_POWER; i++) {
-      volt += valuesVoltage[i];
-      temp += valuesTemp[i];
-    }
-    volt /= NUMBER_VALUES_POWER;
-    temp /= NUMBER_VALUES_POWER;
-    
-    if(temp < maxTemp) {
-      if(isTermalProtect == false) {
-        isTermalProtect = true;
-        setStopMidiPlayer();
-        offInterrupter(); 
-      }
-    } else {
-      if(isTermalProtect == true) {
-        if(temp > minTemp) isTermalProtect = false;
-      }
-    }
-    
-    if(volt <= minVoltage) {
-      if(isLowVoltageProtect == false) {
-        isLowVoltageProtect = true;
-        setStopMidiPlayer();
-        offInterrupter();
-      }
-    } else {
-      isLowVoltageProtect = false;
+  if(temp < maxTemp) {
+    isTermalProtect = true;
+  } else {
+    if(isTermalProtect == true) {
+      if(temp > minTemp) isTermalProtect = false;
     }
   }
+    
+  if(volt <= minVoltage) {
+    isLowVoltageProtect = true;
+  } else {
+    isLowVoltageProtect = false;
+  }
   
-  
-  
-  if(isLowVoltageProtect == true || isTermalProtect == true) isOffOutPin = true;
-  else isOffOutPin = false;
+  if(isLowVoltageProtect == true || isTermalProtect == true) {
+    if(isOffOutPin == false) {
+      isOffOutPin = true;
+      setStopMidiPlayer();
+      offInterrupter();
+    }    
+  } else isOffOutPin = false;
 }

@@ -2,7 +2,7 @@
 
 extern uint8_t Volume;
 extern uint16_t portamentoTime;
-extern boolean portamentoType;
+extern bool portamentoType;
 
 extern Timer Timers[NUMBER_VOICES];
 extern MidiNote notes[NUMBER_NOTES];

@@ -9,7 +9,7 @@
 #include "MidiControllers.h"
 #include "ProcessMidiEvents.h"
 
-extern boolean isError;
+extern bool isError;
 
 int main() {
   initClock();
@@ -24,19 +24,20 @@ int main() {
   
   while(isError == false) {
     processBluetooth();
-    processProtection();
     processPlayer();
     processTxFrames();
 
     if(TIM3->SR & TIM_SR_UIF) {
       TIM3->SR &= ~TIM_SR_UIF;
-      
+
+      processBtRes();      
       processBluetoothEventTimer();
       processLed();
       processModulater();
       processMidiControllers();
       processRequestsPlayer();
       processMidiNotes();
+      processProtection();
     }
   }
   

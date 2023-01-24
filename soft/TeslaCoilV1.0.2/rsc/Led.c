@@ -4,7 +4,7 @@ StateLed currentStateLed = LED_NO_STATE;
 uint16_t countDelLed = 0;
 uint8_t countBlink = 0;
 
-extern boolean isLowVoltageProtect, isTermalProtect;
+extern bool isLowVoltageProtect, isTermalProtect, TriggerOCD, TripOCD;
 
 void setStateLed(StateLed stateLed) {
   currentStateLed = stateLed;
@@ -30,6 +30,17 @@ void processLed() {
       INVERT_GREEN_LED;
     } else countDelLed++;
   } else
+  if(TripOCD) {
+    if(TriggerOCD) {
+      countDelLed = 0;
+      OFF_ALL_LED;
+      return;
+    }
+    
+    if(countDelLed >= 500) {
+      TripOCD = false;
+    } else countDelLed++;
+  } else 
   if(isLowVoltageProtect == true) {
     ON_RED_LED;
   } else 

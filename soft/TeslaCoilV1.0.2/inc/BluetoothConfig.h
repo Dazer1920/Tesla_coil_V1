@@ -13,6 +13,8 @@
 #define RESPONSE_TIME_CONFIGURATE 1200
 #define NUMBER_REQUESTS 2
 
+#define RESET_BT_TIMEOUT 100 // ms
+
 #define CHECK_CONFIG_COMMAND_REQUEST "AT+VERSION\r\n"
 #define CHECK_CONFIG_COMMAND_ANSWER "+VERSION=JDY-31"
 
@@ -37,8 +39,10 @@ void StopBluetoothEventTimer();
 void cleareCounterBluetoothEventTimer();
 
 void setBluetoothEvent(BluetoothEvents event);
+void setBtRes();
 
 void processBluetoothEventTimer();
+void processBtRes();
 
 void processBluetooth();
 

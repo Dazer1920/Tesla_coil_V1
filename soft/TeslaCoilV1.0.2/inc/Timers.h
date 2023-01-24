@@ -25,8 +25,8 @@ typedef struct {
   float pulseSustain;
   uint16_t pulseDel;
   TIM_TypeDef *tim;
-  boolean enable;
-  boolean isMidi;
+  bool enable;
+  bool isMidi;
   StatusAdsr statusAdsr;
   
 } Timer;
@@ -34,7 +34,7 @@ typedef struct {
 void initTimers();
 
 void ResetAllTimers();
-void setEnableTimer(boolean e, uint8_t n, boolean isMidi);
+void setEnableTimer(bool e, uint8_t n, bool isMidi);
 void setOnePulseTimer(uint16_t pulse, uint8_t n);
 
 void setPulseTimer(uint16_t p, uint8_t n);

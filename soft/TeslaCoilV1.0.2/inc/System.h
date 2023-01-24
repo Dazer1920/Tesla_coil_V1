@@ -6,7 +6,7 @@
 typedef enum {
   false = 0,
   true
-} boolean;
+} bool;
 
 #define LED_P_PIN 6
 #define LED_P_PORT GPIOA

@@ -88,7 +88,7 @@
                 </option>
                 <option>
                     <name>OCLastSavedByProductVersion</name>
-                    <state>9.10.1.36322</state>
+                    <state>9.10.2.39304</state>
                 </option>
                 <option>
                     <name>UseFlashLoader</name>
@@ -980,7 +980,7 @@
             <name>LMIFTDI_ID</name>
             <archiveVersion>2</archiveVersion>
             <data>
-                <version>2</version>
+                <version>3</version>
                 <wantNonLocal>1</wantNonLocal>
                 <debug>1</debug>
                 <option>
@@ -1005,6 +1005,19 @@
                 </option>
                 <option>
                     <name>CCLmiFtdiInterfaceCmdLine</name>
+                    <state>0</state>
+                </option>
+                <option>
+                    <name>CCLmiftdiUsbSerialNo</name>
+                    <state></state>
+                </option>
+                <option>
+                    <name>CCLmiftdiUsbSerialNoSelect</name>
+                    <state>0</state>
+                </option>
+                <option>
+                    <name>CCLmiftdiResetList</name>
+                    <version>0</version>
                     <state>0</state>
                 </option>
             </data>
@@ -2493,7 +2506,7 @@
             <name>LMIFTDI_ID</name>
             <archiveVersion>2</archiveVersion>
             <data>
-                <version>2</version>
+                <version>3</version>
                 <wantNonLocal>1</wantNonLocal>
                 <debug>0</debug>
                 <option>
@@ -2518,6 +2531,19 @@
                 </option>
                 <option>
                     <name>CCLmiFtdiInterfaceCmdLine</name>
+                    <state>0</state>
+                </option>
+                <option>
+                    <name>CCLmiftdiUsbSerialNo</name>
+                    <state></state>
+                </option>
+                <option>
+                    <name>CCLmiftdiUsbSerialNoSelect</name>
+                    <state>0</state>
+                </option>
+                <option>
+                    <name>CCLmiftdiResetList</name>
+                    <version>0</version>
                     <state>0</state>
                 </option>
             </data>

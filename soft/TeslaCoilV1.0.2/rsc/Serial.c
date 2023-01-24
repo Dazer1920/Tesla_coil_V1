@@ -1,7 +1,7 @@
 #include "Serial.h"
 
-extern boolean isBluetoothConfig;
-extern boolean isBluetoothConfigurate;
+extern bool isBluetoothConfig;
+extern bool isBluetoothConfigurate;
 
 void processFrames(uint8_t *frame);
 
@@ -47,7 +47,10 @@ void setBaudrateUsart(uint32_t baud) {
   USART1->BRR = (SystemCoreClock + baud / 2) / baud;
 }
 
+volatile bool UsartBusy = false;
+
 void UsartWriteDMA(uint8_t *data, uint16_t len) {
+  UsartBusy = true;
   DMA1_Channel2->CCR &= ~DMA_CCR_EN;
   
   DMA1_Channel2->CNDTR = len;
@@ -60,6 +63,7 @@ void UsartWriteDMA(uint8_t *data, uint16_t len) {
 void DMA1_Channel2_3_IRQHandler() {
   if(DMA1->ISR & DMA_ISR_TCIF2) {
     DMA1->IFCR |= DMA_IFCR_CTCIF2;
+    UsartBusy = false;
   }
 }
 
@@ -76,6 +80,8 @@ void TransmitFrame(uint8_t *frame) {
 }
 
 void processTxFrames() {
+  if(UsartBusy) return;
+  
   if(countTransFrames > 0) {
     UsartWriteDMA(txBuff, countTransFrames * 5);
     countTransFrames = 0;
@@ -105,26 +111,26 @@ void USART1_IRQHandler() {
         sum += rxData;
       }
     } else {
-      if(countBuff >= strlen(CHECK_CONFIG_COMMAND_ANSWER) && isBluetoothConfigurate == false) {
+      if(isBluetoothConfigurate == false && countBuff >= strlen(CHECK_CONFIG_COMMAND_ANSWER)) {
         countBuff = 0;
-        cleareBuff(buff, SIZE_RX_BUFF);
+        memset(buff, 0, SIZE_RX_BUFF);
       } else 
-      if(countBuff >= strlen(CONFIGURATE_COMMAND_ANSWER) && isBluetoothConfigurate == true) {
+      if(isBluetoothConfigurate == true && countBuff >= strlen(CONFIGURATE_COMMAND_ANSWER)) {
         countBuff = 0;
-        cleareBuff(buff, SIZE_RX_BUFF);
+        memset(buff, 0, SIZE_RX_BUFF);
       }
       
       buff[countBuff] = rxData;
       countBuff++;
       
-      if(strstr((const char*) buff, CHECK_CONFIG_COMMAND_ANSWER) != NULL && isBluetoothConfigurate == false) {
+      if(isBluetoothConfigurate == false && strstr((const char*) buff, CHECK_CONFIG_COMMAND_ANSWER) != NULL) {
         countBuff = 0;
-        cleareBuff(buff, SIZE_RX_BUFF);
+        memset(buff, 0, SIZE_RX_BUFF);
         setBluetoothEvent(ANSWER_CHECK_CONFIG);
       } else 
-      if(strstr((const char*) buff, CONFIGURATE_COMMAND_ANSWER) != NULL && isBluetoothConfigurate == true) {
+      if(isBluetoothConfigurate == true && strstr((const char*) buff, CONFIGURATE_COMMAND_ANSWER) != NULL) {
         countBuff = 0;
-        cleareBuff(buff, SIZE_RX_BUFF);
+        memset(buff, 0, SIZE_RX_BUFF);
         setBluetoothEvent(ANSWER_CONFIGURARE);
       }
     }
@@ -132,7 +138,7 @@ void USART1_IRQHandler() {
 }
 
 void processFrames(uint8_t *frame) {
-  boolean fault = false;
+  bool fault = false;
   
   switch(frame[0]) {
   default: fault = true; break;

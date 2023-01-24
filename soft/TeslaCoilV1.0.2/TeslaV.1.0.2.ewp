@@ -70,7 +70,7 @@
                 </option>
                 <option>
                     <name>OGLastSavedByProductVersion</name>
-                    <state>9.10.1.36322</state>
+                    <state>9.10.2.39304</state>
                 </option>
                 <option>
                     <name>OGChipSelectEditMenu</name>
@@ -98,7 +98,7 @@
                 </option>
                 <option>
                     <name>GBECoreSlave</name>
-                    <version>29</version>
+                    <version>30</version>
                     <state>34</state>
                 </option>
                 <option>
@@ -115,7 +115,7 @@
                 </option>
                 <option>
                     <name>CoreVariant</name>
-                    <version>29</version>
+                    <version>30</version>
                     <state>34</state>
                 </option>
                 <option>
@@ -138,7 +138,7 @@
                 </option>
                 <option>
                     <name>GFPUCoreSlave2</name>
-                    <version>29</version>
+                    <version>30</version>
                     <state>34</state>
                 </option>
                 <option>
@@ -1153,7 +1153,7 @@
                 </option>
                 <option>
                     <name>GBECoreSlave</name>
-                    <version>29</version>
+                    <version>30</version>
                     <state>38</state>
                 </option>
                 <option>
@@ -1170,7 +1170,7 @@
                 </option>
                 <option>
                     <name>CoreVariant</name>
-                    <version>29</version>
+                    <version>30</version>
                     <state>38</state>
                 </option>
                 <option>
@@ -1193,7 +1193,7 @@
                 </option>
                 <option>
                     <name>GFPUCoreSlave2</name>
-                    <version>29</version>
+                    <version>30</version>
                     <state>38</state>
                 </option>
                 <option>

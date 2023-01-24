@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.10.1.308/W64 for ARM                  08/Jun/2021  12:13:09
+# IAR ELF Linker V9.10.2.313/W64 for ARM                  23/Oct/2022  17:36:28
 # Copyright 2007-2021 IAR Systems AB.
 #
 #    Output file  =
@@ -73,134 +73,132 @@ initialize by copy { rw };
   .intvec            ro code   0x800'0000    0xc0  startup_stm32f042x6.o [2]
                              - 0x800'00c0    0xc0
 
-"P1":                                      0x34f9
-  .text              ro code   0x800'00c0   0x5ac  pow64.o [6]
-  .text              ro code   0x800'066c    0x24  DblCmpEq.o [6]
-  .text              ro code   0x800'0690    0x54  dlib6_support.o [6]
-  .text              ro code   0x800'06e4    0x2a  frexp.o [6]
-  .text              ro code   0x800'070e    0x32  DblCmpLe.o [6]
-  .text              ro code   0x800'0740    0x70  ldexp.o [6]
-  .text              ro code   0x800'07b0   0x184  DblMul.o [6]
-  .text              ro code   0x800'0934   0x1b4  DblAddSub.o [6]
-  .text              ro code   0x800'0ae8    0x52  DblToI32.o [6]
-  .text              ro code   0x800'0b3a    0x3e  packbits_init_single.o [7]
-  .text              ro code   0x800'0b78    0x34  IxxToDbl.o [6]
-  .text              ro code   0x800'0bac    0xc2  DblDiv.o [6]
-  .text              ro code   0x800'0c6e    0x32  DblCmpGe.o [6]
-  .text              ro code   0x800'0ca0   0x2f4  iar_Exp64.o [6]
-  .text              ro code   0x800'0f94    0x3c  startup_stm32f042x6.o [2]
-  .rodata            const     0x800'0fd0   0x420  pow64.o [6]
-  .text              ro code   0x800'13f0   0x410  Serial.o [2]
-  .text              ro code   0x800'1800    0xe0  I32DivModFast.o [7]
-  .text              ro code   0x800'18e0   0x1f0  Util.o [2]
-  .text              ro code   0x800'1ad0    0x2e  strstr.o [5]
-  .text              ro code   0x800'1afe     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'1b00   0x268  BluetoothConfig.o [2]
-  .text              ro code   0x800'1d68    0x30  ProcessSystemData.o [3]
-  .text              ro code   0x800'1d98   0x10c  ProcessInterrupterData.o [3]
-  .text              ro code   0x800'1ea4   0x1e4  ProcessMidiData.o [3]
-  .text              ro code   0x800'2088     0x2  IntDivZer.o [7]
-  .text              ro code   0x800'208a   0x120  FltAddSub.o [6]
-  .text              ro code   0x800'21aa    0xa4  FltDiv.o [6]
-  .text              ro code   0x800'224e    0xb0  FltMul.o [6]
-  .text              ro code   0x800'22fe     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'2300    0x3a  FltToS32.o [6]
-  .text              ro code   0x800'233a     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'233c    0x32  FltToDbl.o [6]
-  .text              ro code   0x800'236e    0x62  DblToFlt.o [6]
-  .text              ro code   0x800'23d0    0x46  ABImemset.o [7]
-  .text              ro code   0x800'2416     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'2418    0x36  IxxToFlt.o [6]
-  .text              ro code   0x800'244e     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'2450    0x26  FltToU32.o [6]
-  .text              ro code   0x800'2476     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'2478   0x358  Timers.o [2]
-  .text              ro code   0x800'27d0    0x12  strchr.o [7]
-  .text              ro code   0x800'27e2     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'27e4   0x10c  Led.o [2]
-  .text              ro code   0x800'28f0   0x13c  System.o [2]
-  .text              ro code   0x800'2a2c     0xe  strlen.o [7]
-  .text              ro code   0x800'2a3a     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'2a3c   0x294  Protection.o [2]
-  .text              ro code   0x800'2cd0   0x274  ProcessMidiEvents.o [4]
-  .text              ro code   0x800'2f44   0x1c8  Player.o [4]
-  .text              ro code   0x800'310c   0x134  MidiControllers.o [4]
-  .text              ro code   0x800'3240    0x28  FltCmpGe.o [6]
-  .rodata            const     0x800'3268   0x100  Util.o [2]
-  .text              ro code   0x800'3368    0x74  main.o [1]
-  .text              ro code   0x800'33dc    0x60  system_stm32f0xx.o [2]
-  .text              ro code   0x800'343c    0x3c  zero_init3.o [7]
-  .text              ro code   0x800'3478    0x28  data_init.o [7]
-  .iar.init_table    const     0x800'34a0    0x20  - Linker created -
-  .text              ro code   0x800'34c0    0x1e  cmain.o [7]
-  .text              ro code   0x800'34de     0x4  low_level_init.o [5]
-  .text              ro code   0x800'34e2     0x8  exit.o [5]
-  .text              ro code   0x800'34ea     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'34ec     0xa  cexit.o [7]
-  .text              ro code   0x800'34f6     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'34f8    0x14  exit.o [8]
-  .text              ro code   0x800'350c    0x1c  cstartup_M.o [7]
-  .text              ro code   0x800'3528     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'352a     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'352c     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'352e     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'3530     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'3532     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'3534     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'3536     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'3538     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'353a     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'353c     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'353e     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'3540     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'3542     0x2  startup_stm32f042x6.o [2]
-  .text              ro code   0x800'3544     0x2  startup_stm32f042x6.o [2]
-  .rodata            const     0x800'3546     0x0  zero_init3.o [7]
-  .rodata            const     0x800'3546     0x0  packbits_init_single.o [7]
-  Initializer bytes  const     0x800'3546    0x73  <for P2-1>
-                             - 0x800'35b9  0x34f9
+"P1":                                      0x3655
+  .text              ro code   0x800'00c0   0x69c  pow64.o [6]
+  .text              ro code   0x800'075c    0x24  DblCmpEq.o [6]
+  .text              ro code   0x800'0780    0x2a  frexp.o [6]
+  .text              ro code   0x800'07aa    0x32  DblCmpLe.o [6]
+  .text              ro code   0x800'07dc    0x70  ldexp.o [6]
+  .text              ro code   0x800'084c   0x184  DblMul.o [6]
+  .text              ro code   0x800'09d0   0x1b4  DblAddSub.o [6]
+  .text              ro code   0x800'0b84    0x52  DblToI32.o [6]
+  .text              ro code   0x800'0bd6    0x3e  packbits_init_single.o [7]
+  .text              ro code   0x800'0c14    0x34  IxxToDbl.o [6]
+  .text              ro code   0x800'0c48    0xc2  DblDiv.o [6]
+  .text              ro code   0x800'0d0a    0x32  DblCmpGe.o [6]
+  .text              ro code   0x800'0d3c   0x2f4  iar_Exp64.o [6]
+  .rodata            const     0x800'1030   0x420  pow64.o [6]
+  .text              ro code   0x800'1450   0x410  Serial.o [2]
+  .text              ro code   0x800'1860    0xe0  I32DivModFast.o [7]
+  .text              ro code   0x800'1940    0x2e  strstr.o [5]
+  .text              ro code   0x800'196e     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'1970   0x29c  BluetoothConfig.o [2]
+  .text              ro code   0x800'1c0c    0x30  ProcessSystemData.o [3]
+  .text              ro code   0x800'1c3c   0x10c  ProcessInterrupterData.o [3]
+  .text              ro code   0x800'1d48   0x1e4  ProcessMidiData.o [3]
+  .text              ro code   0x800'1f2c     0x2  IntDivZer.o [7]
+  .text              ro code   0x800'1f2e     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'1f30    0x12  strchr.o [7]
+  .text              ro code   0x800'1f42     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'1f44   0x144  Led.o [2]
+  .text              ro code   0x800'2088   0x140  System.o [2]
+  .text              ro code   0x800'21c8     0xe  strlen.o [7]
+  .text              ro code   0x800'21d6     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'21d8   0x2f8  Protection.o [2]
+  .text              ro code   0x800'24d0   0x358  Timers.o [2]
+  .text              ro code   0x800'2828   0x274  ProcessMidiEvents.o [4]
+  .text              ro code   0x800'2a9c   0x1bc  Player.o [4]
+  .text              ro code   0x800'2c58    0x36  IxxToFlt.o [6]
+  .text              ro code   0x800'2c8e    0xa4  FltDiv.o [6]
+  .text              ro code   0x800'2d32     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'2d34   0x1f4  Util.o [2]
+  .text              ro code   0x800'2f28    0xb0  FltMul.o [6]
+  .text              ro code   0x800'2fd8    0x3a  FltToS32.o [6]
+  .text              ro code   0x800'3012     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'3014    0x32  ABImemset.o [7]
+  .text              ro code   0x800'3046     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'3048    0x26  FltToU32.o [6]
+  .text              ro code   0x800'306e   0x120  FltAddSub.o [6]
+  .text              ro code   0x800'318e     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'3190    0x32  FltToDbl.o [6]
+  .text              ro code   0x800'31c2    0x62  DblToFlt.o [6]
+  .text              ro code   0x800'3224   0x134  MidiControllers.o [4]
+  .text              ro code   0x800'3358    0x28  FltCmpGe.o [6]
+  .rodata            const     0x800'3380   0x100  Util.o [2]
+  .text              ro code   0x800'3480    0x78  main.o [1]
+  .text              ro code   0x800'34f8    0x60  system_stm32f0xx.o [2]
+  .text              ro code   0x800'3558    0x3c  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'3594    0x3c  zero_init3.o [7]
+  .text              ro code   0x800'35d0    0x28  data_init.o [7]
+  .iar.init_table    const     0x800'35f8    0x20  - Linker created -
+  .text              ro code   0x800'3618    0x1e  cmain.o [7]
+  .text              ro code   0x800'3636     0x4  low_level_init.o [5]
+  .text              ro code   0x800'363a     0x8  exit.o [5]
+  .text              ro code   0x800'3642     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'3644     0xa  cexit.o [7]
+  .text              ro code   0x800'364e     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'3650    0x14  exit.o [8]
+  .text              ro code   0x800'3664    0x1c  cstartup_M.o [7]
+  .text              ro code   0x800'3680     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'3682     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'3684     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'3686     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'3688     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'368a     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'368c     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'368e     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'3690     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'3692     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'3694     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'3696     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'3698     0x2  startup_stm32f042x6.o [2]
+  .text              ro code   0x800'369a     0x2  startup_stm32f042x6.o [2]
+  .rodata            const     0x800'369c     0x0  zero_init3.o [7]
+  .rodata            const     0x800'369c     0x0  packbits_init_single.o [7]
+  Initializer bytes  const     0x800'369c    0x79  <for P2-1>
+                             - 0x800'3715  0x3655
 
-"P2", part 1 of 3:                           0xa1
-  P2-1                        0x2000'0000    0xa1  <Init block>
+"P2", part 1 of 3:                          0x259
+  P2-1                        0x2000'0000   0x259  <Init block>
     .data            inited   0x2000'0000    0x80  BluetoothConfig.o [2]
-    .data            inited   0x2000'0080    0x18  Player.o [4]
-    .data            inited   0x2000'0098     0x4  system_stm32f0xx.o [2]
-    .data            inited   0x2000'009c     0x4  MidiControllers.o [4]
-    .data            inited   0x2000'00a0     0x1  Util.o [2]
-                            - 0x2000'00a1    0xa1
+    .data            inited   0x2000'0080   0x1d0  Player.o [4]
+    .data            inited   0x2000'0250     0x4  system_stm32f0xx.o [2]
+    .data            inited   0x2000'0254     0x4  MidiControllers.o [4]
+    .data            inited   0x2000'0258     0x1  Util.o [2]
+                            - 0x2000'0259   0x259
 
-"P2", part 2 of 3:                          0x58c
-  .bss               zero     0x2000'00a4   0x248  Player.o [4]
-  .bss               zero     0x2000'02ec   0x1b8  Player.o [4]
+"P2", part 2 of 3:                          0x3b8
+  .bss               zero     0x2000'025c   0x248  Player.o [4]
   .bss               zero     0x2000'04a4    0x6c  Timers.o [2]
   .bss               zero     0x2000'0510    0x40  ProcessMidiEvents.o [4]
   .bss               zero     0x2000'0550    0x40  ProcessMidiEvents.o [4]
-  .bss               zero     0x2000'0590    0x38  Protection.o [2]
-  .bss               zero     0x2000'05c8    0x34  Serial.o [2]
-  .bss               zero     0x2000'05fc    0x14  Serial.o [2]
-  .bss               zero     0x2000'0610     0xc  ProcessInterrupterData.o [3]
-  .bss               zero     0x2000'061c     0x4  Led.o [2]
-  .bss               zero     0x2000'0620     0x4  Serial.o [2]
-  .bss               zero     0x2000'0624     0x2  MidiControllers.o [4]
-  .bss               zero     0x2000'0626     0x2  MidiControllers.o [4]
-  .bss               zero     0x2000'0628     0x2  Serial.o [2]
-  .bss               zero     0x2000'062a     0x2  Util.o [2]
-  .bss               zero     0x2000'062c     0x1  System.o [2]
-  .bss               zero     0x2000'062d     0x1  Util.o [2]
-                            - 0x2000'062e   0x58a
+  .bss               zero     0x2000'0590    0x34  Serial.o [2]
+  .bss               zero     0x2000'05c4    0x1a  Protection.o [2]
+  .bss               zero     0x2000'05de     0x2  MidiControllers.o [4]
+  .bss               zero     0x2000'05e0    0x14  Serial.o [2]
+  .bss               zero     0x2000'05f4     0xc  ProcessInterrupterData.o [3]
+  .bss               zero     0x2000'0600     0x4  Led.o [2]
+  .bss               zero     0x2000'0604     0x4  Serial.o [2]
+  .bss               zero     0x2000'0608     0x3  Serial.o [2]
+  .bss               zero     0x2000'060b     0x1  System.o [2]
+  .bss               zero     0x2000'060c     0x2  MidiControllers.o [4]
+  .bss               zero     0x2000'060e     0x2  Util.o [2]
+  .bss               zero     0x2000'0610     0x1  Util.o [2]
+                            - 0x2000'0611   0x3b5
 
 "P2", part 3 of 3:                          0x400
-  CSTACK                      0x2000'0630   0x400  <Block>
-    CSTACK           uninit   0x2000'0630   0x400  <Block tail>
-                            - 0x2000'0a30   0x400
+  CSTACK                      0x2000'0618   0x400  <Block>
+    CSTACK           uninit   0x2000'0618   0x400  <Block tail>
+                            - 0x2000'0a18   0x400
 
 Unused ranges:
 
          From           To   Size
          ----           --   ----
-   0x800'35b9   0x800'3fff  0xa47
-  0x2000'00a1  0x2000'00a3    0x3
-  0x2000'0a30  0x2000'17ff  0xdd0
+   0x800'3715   0x800'3fff  0x8eb
+  0x2000'0259  0x2000'025b    0x3
+  0x2000'0614  0x2000'0617    0x4
+  0x2000'0a18  0x2000'17ff  0xde8
 
 
 *******************************************************************************
@@ -210,14 +208,14 @@ Unused ranges:
           Address      Size
           -------      ----
 Zero (__iar_zero_init3)
-    1 destination range, total size 0x58a:
-          0x2000'00a4  0x58a
+    1 destination range, total size 0x3b5:
+          0x2000'025c  0x3b5
 
 Copy/packbits (__iar_packbits_init_single3)
-    1 source range, total size 0x73 (71% of destination):
-           0x800'3546   0x73
-    1 destination range, total size 0xa1:
-          0x2000'0000   0xa1
+    1 source range, total size 0x79 (20% of destination):
+           0x800'369c   0x79
+    1 destination range, total size 0x259:
+          0x2000'0000  0x259
 
 
 
@@ -232,22 +230,22 @@ command line/config:
     Total:
 
 C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\Debug\Obj: [1]
-    main.o                        116
+    main.o                        120
     ---------------------------------------------------
-    Total:                        116
+    Total:                        120
 
 C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\Debug\Obj\rsc: [2]
-    BluetoothConfig.o             616       91      128
-    Led.o                         268                 4
-    Protection.o                  660                56
-    Serial.o                    1'040                78
-    System.o                      316                 1
+    BluetoothConfig.o             668       25      128
+    Led.o                         324                 4
+    Protection.o                  760                26
+    Serial.o                    1'040                79
+    System.o                      320                 1
     Timers.o                      856               108
-    Util.o                        496      257        4
-    startup_stm32f042x6.o         302
-    system_stm32f0xx.o             96        3        4
+    Util.o                        500      256        4
+    startup_stm32f042x6.o         300
+    system_stm32f0xx.o             96                 4
     ---------------------------------------------------
-    Total:                      4'650      351      383
+    Total:                      4'864      281      354
 
 C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\Debug\Obj\rsc\ProcessingData: [3]
     ProcessInterrupterData.o      268                12
@@ -257,11 +255,11 @@ C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\Debug\Obj\rsc
     Total:                        800                12
 
 C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\Debug\Obj\rsc\midi: [4]
-    MidiControllers.o             308        3        8
-    Player.o                      456       17    1'048
+    MidiControllers.o             308        1        8
+    Player.o                      444       94    1'048
     ProcessMidiEvents.o           628               128
     ---------------------------------------------------
-    Total:                      1'392       20    1'184
+    Total:                      1'380       95    1'184
 
 dl6M_tln.a: [5]
     exit.o                          8
@@ -288,16 +286,15 @@ m6M_tl.a: [6]
     FltToU32.o                     38
     IxxToDbl.o                     52
     IxxToFlt.o                     54
-    dlib6_support.o                84
     frexp.o                        42
     iar_Exp64.o                   756
     ldexp.o                       112
-    pow64.o                     1'452    1'056
+    pow64.o                     1'692    1'056
     ---------------------------------------------------
-    Total:                      4'700    1'056
+    Total:                      4'856    1'056
 
 rt6M_tl.a: [7]
-    ABImemset.o                    70
+    ABImemset.o                    50
     I32DivModFast.o               224
     IntDivZer.o                     2
     cexit.o                        10
@@ -309,16 +306,16 @@ rt6M_tl.a: [7]
     strlen.o                       14
     zero_init3.o                   60
     ---------------------------------------------------
-    Total:                        558
+    Total:                        538
 
 shb_l.a: [8]
     exit.o                         20
     ---------------------------------------------------
     Total:                         20
 
-    Linker created                          32    1'024
+    Linker created                          33    1'024
 -------------------------------------------------------
-    Grand Total:               12'294    1'459    2'603
+    Grand Total:               12'636    1'465    2'574
 
 
 *******************************************************************************
@@ -327,138 +324,140 @@ shb_l.a: [8]
 
 Entry                       Address   Size  Type      Object
 -----                       -------   ----  ----      ------
-.iar.init_table$$Base    0x800'34a0          --   Gb  - Linker created -
-.iar.init_table$$Limit   0x800'34c0          --   Gb  - Linker created -
-?main                    0x800'34c1         Code  Gb  cmain.o [7]
+.iar.init_table$$Base    0x800'35f8          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'3618          --   Gb  - Linker created -
+?main                    0x800'3619         Code  Gb  cmain.o [7]
 ATCommands              0x2000'004c   0x34  Data  Gb  BluetoothConfig.o [2]
-AttackVal               0x2000'0624    0x2  Data  Gb  MidiControllers.o [4]
-CSTACK$$Base            0x2000'0630          --   Gb  - Linker created -
-CSTACK$$Limit           0x2000'0a30          --   Gb  - Linker created -
-ChangeConnection         0x800'1c83   0x2e  Code  Gb  BluetoothConfig.o [2]
-Connected                0x800'1c4d   0x1c  Code  Gb  BluetoothConfig.o [2]
-ControllerHandler        0x800'2eb3   0x32  Code  Gb  ProcessMidiEvents.o [4]
-CountTimeOffModulater   0x2000'061a    0x2  Data  Gb  ProcessInterrupterData.o [3]
-CountTimeOnModulater    0x2000'0618    0x2  Data  Gb  ProcessInterrupterData.o [3]
+AttackVal               0x2000'05de    0x2  Data  Gb  MidiControllers.o [4]
+CSTACK$$Base            0x2000'0618          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0a18          --   Gb  - Linker created -
+ChangeConnection         0x800'1af9   0x2e  Code  Gb  BluetoothConfig.o [2]
+Connected                0x800'1abd   0x1c  Code  Gb  BluetoothConfig.o [2]
+ControllerHandler        0x800'2a0b   0x32  Code  Gb  ProcessMidiEvents.o [4]
+CountTimeOffModulater   0x2000'05fe    0x2  Data  Gb  ProcessInterrupterData.o [3]
+CountTimeOnModulater    0x2000'05fc    0x2  Data  Gb  ProcessInterrupterData.o [3]
 CurrentEvent            0x2000'0005    0x1  Data  Gb  BluetoothConfig.o [2]
 DMA1_Channel1_IRQHandler
-                         0x800'2b49   0x12  Code  Gb  Protection.o [2]
+                         0x800'2375   0x12  Code  Gb  Protection.o [2]
 DMA1_Channel2_3_IRQHandler
-                         0x800'150b   0x12  Code  Gb  Serial.o [2]
-DecayVal                0x2000'009c    0x2  Data  Gb  MidiControllers.o [4]
-Disconnected             0x800'1c69   0x1a  Code  Gb  BluetoothConfig.o [2]
+                         0x800'156d   0x18  Code  Gb  Serial.o [2]
+DecayVal                0x2000'0254    0x2  Data  Gb  MidiControllers.o [4]
+Disconnected             0x800'1ad9   0x20  Code  Gb  BluetoothConfig.o [2]
+EXTI2_3_IRQHandler       0x800'2341   0x34  Code  Gb  Protection.o [2]
 MaxTicksFile            0x2000'0094    0x4  Data  Gb  Player.o [4]
 MidiControllers         0x2000'0550   0x40  Data  Gb  ProcessMidiEvents.o [4]
-MidiEventTicks          0x2000'00a4  0x248  Data  Gb  Player.o [4]
-MidiEvents              0x2000'02ec  0x1b8  Data  Gb  Player.o [4]
-NoteOffHandler           0x800'2e2b   0x88  Code  Gb  ProcessMidiEvents.o [4]
-NoteOnHandler            0x800'2d8b   0xa0  Code  Gb  ProcessMidiEvents.o [4]
-PitchBendHandler         0x800'2ee5   0x4c  Code  Gb  ProcessMidiEvents.o [4]
-PlayerBegen              0x800'2f45   0x38  Code  Gb  Player.o [4]
-Region$$Table$$Base      0x800'34a0          --   Gb  - Linker created -
-Region$$Table$$Limit     0x800'34c0          --   Gb  - Linker created -
-ReleaseVal              0x2000'0626    0x2  Data  Gb  MidiControllers.o [4]
-ResetAllTimers           0x800'2601   0x24  Code  Gb  Timers.o [2]
+MidiEventTicks          0x2000'025c  0x248  Data  Gb  Player.o [4]
+MidiEvents              0x2000'0098  0x1b8  Data  Gb  Player.o [4]
+NoteOffHandler           0x800'2983   0x88  Code  Gb  ProcessMidiEvents.o [4]
+NoteOnHandler            0x800'28e3   0xa0  Code  Gb  ProcessMidiEvents.o [4]
+PitchBendHandler         0x800'2a3d   0x4c  Code  Gb  ProcessMidiEvents.o [4]
+PlayerBegen              0x800'2a9d   0x2c  Code  Gb  Player.o [4]
+Region$$Table$$Base      0x800'35f8          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'3618          --   Gb  - Linker created -
+ReleaseVal              0x2000'060c    0x2  Data  Gb  MidiControllers.o [4]
+ResetAllTimers           0x800'2659   0x24  Code  Gb  Timers.o [2]
 Resolution              0x2000'0084    0x2  Data  Gb  Player.o [4]
-SetTempoHandler          0x800'2d39   0x20  Code  Gb  ProcessMidiEvents.o [4]
-SustainVal              0x2000'009e    0x2  Data  Gb  MidiControllers.o [4]
-SystemCoreClock         0x2000'0098    0x4  Data  Gb  system_stm32f0xx.o [2]
-SystemError              0x800'29c5   0x28  Code  Gb  System.o [2]
-SystemInit               0x800'33dd   0x48  Code  Gb  system_stm32f0xx.o [2]
-TIM14_IRQHandler         0x800'2759    0xa  Code  Gb  Timers.o [2]
-TIM16_IRQHandler         0x800'2769    0xa  Code  Gb  Timers.o [2]
-TIM17_IRQHandler         0x800'2779    0xa  Code  Gb  Timers.o [2]
+SetTempoHandler          0x800'2891   0x20  Code  Gb  ProcessMidiEvents.o [4]
+SustainVal              0x2000'0256    0x2  Data  Gb  MidiControllers.o [4]
+SystemCoreClock         0x2000'0250    0x4  Data  Gb  system_stm32f0xx.o [2]
+SystemError              0x800'2151   0x32  Code  Gb  System.o [2]
+SystemInit               0x800'34f9   0x48  Code  Gb  system_stm32f0xx.o [2]
+TIM14_IRQHandler         0x800'27b1    0xa  Code  Gb  Timers.o [2]
+TIM16_IRQHandler         0x800'27c1    0xa  Code  Gb  Timers.o [2]
+TIM17_IRQHandler         0x800'27d1    0xa  Code  Gb  Timers.o [2]
 TIM1_BRK_UP_TRG_COM_IRQHandler
-                         0x800'3061   0x1a  Code  Gb  Player.o [4]
+                         0x800'2baf   0x1a  Code  Gb  Player.o [4]
 Tempo                   0x2000'008c    0x4  Data  Gb  Player.o [4]
 Timers                  0x2000'04a4   0x6c  Data  Gb  Timers.o [2]
 TpansmitValuesProtection
-                         0x800'2b5d   0x74  Code  Gb  Protection.o [2]
-TransmitFrame            0x800'151d   0x4e  Code  Gb  Serial.o [2]
-USART1_IRQHandler        0x800'15a1   0xe2  Code  Gb  Serial.o [2]
-UsartWriteDMA            0x800'14eb   0x20  Code  Gb  Serial.o [2]
-Volume                  0x2000'00a0    0x1  Data  Gb  Util.o [2]
+                         0x800'2389   0x76  Code  Gb  Protection.o [2]
+TransmitFrame            0x800'1585   0x4e  Code  Gb  Serial.o [2]
+TriggerOCD              0x2000'05cf    0x1  Data  Gb  Protection.o [2]
+TripOCD                 0x2000'05d0    0x1  Data  Gb  Protection.o [2]
+USART1_IRQHandler        0x800'1611   0xd4  Code  Gb  Serial.o [2]
+UsartBusy               0x2000'0608    0x1  Data  Gb  Serial.o [2]
+UsartWriteDMA            0x800'154b   0x22  Code  Gb  Serial.o [2]
+Volume                  0x2000'0258    0x1  Data  Gb  Util.o [2]
 __ICFEDIT_region_RAM_end__ {Abs}
                         0x2000'17ff         Data  Gb  <internal module>
 __ICFEDIT_region_RAM_start__ {Abs}
                         0x2000'0000         Data  Gb  <internal module>
-__aeabi_cdcmpeq          0x800'066d         Code  Gb  DblCmpEq.o [6]
-__aeabi_cdcmple          0x800'070f         Code  Gb  DblCmpLe.o [6]
-__aeabi_cdrcmple         0x800'0c6f         Code  Gb  DblCmpGe.o [6]
-__aeabi_cfrcmple         0x800'3241         Code  Gb  FltCmpGe.o [6]
-__aeabi_d2f              0x800'236f         Code  Gb  DblToFlt.o [6]
-__aeabi_d2iz             0x800'0ae9         Code  Gb  DblToI32.o [6]
-__aeabi_d2uiz            0x800'0b0d         Code  Gb  DblToI32.o [6]
-__aeabi_dadd             0x800'0935         Code  Gb  DblAddSub.o [6]
-__aeabi_ddiv             0x800'0bad         Code  Gb  DblDiv.o [6]
-__aeabi_dmul             0x800'07b1         Code  Gb  DblMul.o [6]
-__aeabi_dsub             0x800'09fb         Code  Gb  DblAddSub.o [6]
-__aeabi_f2d              0x800'233d         Code  Gb  FltToDbl.o [6]
-__aeabi_f2iz             0x800'2301         Code  Gb  FltToS32.o [6]
-__aeabi_f2uiz            0x800'2451         Code  Gb  FltToU32.o [6]
-__aeabi_fadd             0x800'208b         Code  Gb  FltAddSub.o [6]
-__aeabi_fdiv             0x800'21ab         Code  Gb  FltDiv.o [6]
-__aeabi_fmul             0x800'224f         Code  Gb  FltMul.o [6]
-__aeabi_fsub             0x800'20fb         Code  Gb  FltAddSub.o [6]
-__aeabi_i2d              0x800'0b99         Code  Gb  IxxToDbl.o [6]
-__aeabi_i2f              0x800'2439         Code  Gb  IxxToFlt.o [6]
-__aeabi_idiv             0x800'182d         Code  Gb  I32DivModFast.o [7]
-__aeabi_idiv0            0x800'2089         Code  Gb  IntDivZer.o [7]
-__aeabi_idivmod          0x800'182d         Code  Gb  I32DivModFast.o [7]
-__aeabi_memclr           0x800'23e5         Code  Gb  ABImemset.o [7]
-__aeabi_ui2d             0x800'0b79         Code  Gb  IxxToDbl.o [6]
-__aeabi_ui2f             0x800'2419         Code  Gb  IxxToFlt.o [6]
-__aeabi_uidiv            0x800'1833         Code  Gb  I32DivModFast.o [7]
-__aeabi_uidivmod         0x800'1833         Code  Gb  I32DivModFast.o [7]
-__cmain                  0x800'34c1         Code  Gb  cmain.o [7]
-__exit                   0x800'34f9   0x14  Code  Gb  exit.o [8]
-__iar_Exp64              0x800'0ca1  0x2f4  Code  Gb  iar_Exp64.o [6]
-__iar_Memset4_word       0x800'23e9         Code  Gb  ABImemset.o [7]
-__iar_Memset_word        0x800'23d1         Code  Gb  ABImemset.o [7]
-__iar_Strchr             0x800'27d1         Code  Gb  strchr.o [7]
-__iar_d2uiz              0x800'0b11         Code  Gb  DblToI32.o [6]
-__iar_data_init3         0x800'3479   0x28  Code  Gb  data_init.o [7]
-__iar_frexp              0x800'06f1         Code  Gb  frexp.o [6]
-__iar_frexp64            0x800'06e5         Code  Gb  frexp.o [6]
-__iar_frexpl             0x800'06f1         Code  Gb  frexp.o [6]
-__iar_ldexp64            0x800'0741         Code  Gb  ldexp.o [6]
+__aeabi_cdcmpeq          0x800'075d         Code  Gb  DblCmpEq.o [6]
+__aeabi_cdcmple          0x800'07ab         Code  Gb  DblCmpLe.o [6]
+__aeabi_cdrcmple         0x800'0d0b         Code  Gb  DblCmpGe.o [6]
+__aeabi_cfrcmple         0x800'3359         Code  Gb  FltCmpGe.o [6]
+__aeabi_d2f              0x800'31c3         Code  Gb  DblToFlt.o [6]
+__aeabi_d2iz             0x800'0b85         Code  Gb  DblToI32.o [6]
+__aeabi_d2uiz            0x800'0ba9         Code  Gb  DblToI32.o [6]
+__aeabi_dadd             0x800'09d1         Code  Gb  DblAddSub.o [6]
+__aeabi_ddiv             0x800'0c49         Code  Gb  DblDiv.o [6]
+__aeabi_dmul             0x800'084d         Code  Gb  DblMul.o [6]
+__aeabi_dsub             0x800'0a97         Code  Gb  DblAddSub.o [6]
+__aeabi_f2d              0x800'3191         Code  Gb  FltToDbl.o [6]
+__aeabi_f2iz             0x800'2fd9         Code  Gb  FltToS32.o [6]
+__aeabi_f2uiz            0x800'3049         Code  Gb  FltToU32.o [6]
+__aeabi_fadd             0x800'306f         Code  Gb  FltAddSub.o [6]
+__aeabi_fdiv             0x800'2c8f         Code  Gb  FltDiv.o [6]
+__aeabi_fmul             0x800'2f29         Code  Gb  FltMul.o [6]
+__aeabi_fsub             0x800'30df         Code  Gb  FltAddSub.o [6]
+__aeabi_i2d              0x800'0c35         Code  Gb  IxxToDbl.o [6]
+__aeabi_i2f              0x800'2c79         Code  Gb  IxxToFlt.o [6]
+__aeabi_idiv             0x800'188d         Code  Gb  I32DivModFast.o [7]
+__aeabi_idiv0            0x800'1f2d         Code  Gb  IntDivZer.o [7]
+__aeabi_idivmod          0x800'188d         Code  Gb  I32DivModFast.o [7]
+__aeabi_memclr4          0x800'3015         Code  Gb  ABImemset.o [7]
+__aeabi_memclr8          0x800'3015         Code  Gb  ABImemset.o [7]
+__aeabi_ui2d             0x800'0c15         Code  Gb  IxxToDbl.o [6]
+__aeabi_ui2f             0x800'2c59         Code  Gb  IxxToFlt.o [6]
+__aeabi_uidiv            0x800'1893         Code  Gb  I32DivModFast.o [7]
+__aeabi_uidivmod         0x800'1893         Code  Gb  I32DivModFast.o [7]
+__cmain                  0x800'3619         Code  Gb  cmain.o [7]
+__exit                   0x800'3651   0x14  Code  Gb  exit.o [8]
+__iar_Exp64              0x800'0d3d  0x2f4  Code  Gb  iar_Exp64.o [6]
+__iar_Memset4_word       0x800'3019         Code  Gb  ABImemset.o [7]
+__iar_Strchr             0x800'1f31         Code  Gb  strchr.o [7]
+__iar_d2uiz              0x800'0bad         Code  Gb  DblToI32.o [6]
+__iar_data_init3         0x800'35d1   0x28  Code  Gb  data_init.o [7]
+__iar_frexp              0x800'078d         Code  Gb  frexp.o [6]
+__iar_frexp64            0x800'0781         Code  Gb  frexp.o [6]
+__iar_frexpl             0x800'078d         Code  Gb  frexp.o [6]
+__iar_ldexp64            0x800'07dd         Code  Gb  ldexp.o [6]
 __iar_packbits_init_single3
-                         0x800'0b3b   0x3e  Code  Gb  packbits_init_single.o [7]
-__iar_pow64              0x800'00c1  0x5ac  Code  Gb  pow64.o [6]
-__iar_pow_medium         0x800'00c1  0x5ac  Code  Gb  pow64.o [6]
-__iar_pow_medium64       0x800'00c1  0x5ac  Code  Gb  pow64.o [6]
-__iar_pow_mediuml        0x800'00c1  0x5ac  Code  Gb  pow64.o [6]
-__iar_program_start      0x800'350d         Code  Gb  cstartup_M.o [7]
-__iar_scalbln64          0x800'0741         Code  Gb  ldexp.o [6]
-__iar_scalbn64           0x800'0741         Code  Gb  ldexp.o [6]
-__iar_trunc64            0x800'0691   0x44  Code  Gb  dlib6_support.o [6]
-__iar_trunc_0_64         0x800'06d5    0xa  Code  Gb  dlib6_support.o [6]
-__iar_zero_init3         0x800'343d   0x3c  Code  Gb  zero_init3.o [7]
-__low_level_init         0x800'34df    0x4  Code  Gb  low_level_init.o [5]
+                         0x800'0bd7   0x3e  Code  Gb  packbits_init_single.o [7]
+__iar_pow64              0x800'00c1  0x69c  Code  Gb  pow64.o [6]
+__iar_pow_medium         0x800'00c1  0x69c  Code  Gb  pow64.o [6]
+__iar_pow_medium64       0x800'00c1  0x69c  Code  Gb  pow64.o [6]
+__iar_pow_mediuml        0x800'00c1  0x69c  Code  Gb  pow64.o [6]
+__iar_program_start      0x800'3665         Code  Gb  cstartup_M.o [7]
+__iar_scalbln64          0x800'07dd         Code  Gb  ldexp.o [6]
+__iar_scalbn64           0x800'07dd         Code  Gb  ldexp.o [6]
+__iar_zero_init3         0x800'3595   0x3c  Code  Gb  zero_init3.o [7]
+__low_level_init         0x800'3637    0x4  Code  Gb  low_level_init.o [5]
 __vector_table           0x800'0000         Data  Gb  startup_stm32f042x6.o [2]
-_call_main               0x800'34cd         Code  Gb  cmain.o [7]
-_exit                    0x800'34ed         Code  Gb  cexit.o [7]
-abs                      0x800'1997    0xa  Code  Gb  Util.o [2]
-answerCheckConfig        0x800'1b81   0x22  Code  Gb  BluetoothConfig.o [2]
-answerConfigurate        0x800'1c35   0x18  Code  Gb  BluetoothConfig.o [2]
+_call_main               0x800'3625         Code  Gb  cmain.o [7]
+_exit                    0x800'3645         Code  Gb  cexit.o [7]
+abs                      0x800'2def    0xa  Code  Gb  Util.o [2]
+answerCheckConfig        0x800'19f1   0x22  Code  Gb  BluetoothConfig.o [2]
+answerConfigurate        0x800'1aa5   0x18  Code  Gb  BluetoothConfig.o [2]
 baudsTable              0x2000'0010   0x3c  Data  Gb  BluetoothConfig.o [2]
-buff                    0x2000'0600   0x10  Data  Gb  Serial.o [2]
-calculateTimeTick        0x800'2fb3   0x22  Code  Gb  Player.o [4]
-checkConfig              0x800'1b2d   0x54  Code  Gb  BluetoothConfig.o [2]
-cleareBuff               0x800'1989    0xe  Code  Gb  Util.o [2]
+btResCountDel           0x2000'000a    0x1  Data  Gb  BluetoothConfig.o [2]
+buff                    0x2000'05e4   0x10  Data  Gb  Serial.o [2]
+calculateTimeTick        0x800'2aff   0x22  Code  Gb  Player.o [4]
+checkConfig              0x800'199d   0x54  Code  Gb  BluetoothConfig.o [2]
 cleareCounterBluetoothEventTimer
-                         0x800'1b1f    0x8  Code  Gb  BluetoothConfig.o [2]
-cofigEnd                 0x800'1ba3   0x20  Code  Gb  BluetoothConfig.o [2]
-configurate              0x800'1bc3   0x72  Code  Gb  BluetoothConfig.o [2]
+                         0x800'198f    0x8  Code  Gb  BluetoothConfig.o [2]
+cofigEnd                 0x800'1a13   0x20  Code  Gb  BluetoothConfig.o [2]
+configurate              0x800'1a33   0x72  Code  Gb  BluetoothConfig.o [2]
 convertTemperatureToAdc
-                         0x800'1911   0x78  Code  Gb  Util.o [2]
-convertVoltageToAdc      0x800'18e1   0x30  Code  Gb  Util.o [2]
+                         0x800'2d65   0x78  Code  Gb  Util.o [2]
+convertVoltageToAdc      0x800'2d35   0x30  Code  Gb  Util.o [2]
 countBauds              0x2000'0001    0x1  Data  Gb  BluetoothConfig.o [2]
-countBlink              0x2000'061d    0x1  Data  Gb  Led.o [2]
-countBuff               0x2000'05fd    0x1  Data  Gb  Serial.o [2]
+countBlink              0x2000'0601    0x1  Data  Gb  Led.o [2]
+countBuff               0x2000'05e1    0x1  Data  Gb  Serial.o [2]
 countBuffMidiEvents     0x2000'0081    0x1  Data  Gb  Player.o [4]
 countChangeConnection   0x2000'0007    0x1  Data  Gb  BluetoothConfig.o [2]
 countCommands           0x2000'0002    0x1  Data  Gb  BluetoothConfig.o [2]
-countDelLed             0x2000'061e    0x2  Data  Gb  Led.o [2]
+countDelLed             0x2000'0602    0x2  Data  Gb  Led.o [2]
 countPlayTicks          0x2000'0086    0x2  Data  Gb  Player.o [4]
 countProcesedMidiEvents
                         0x2000'0080    0x1  Data  Gb  Player.o [4]
@@ -466,125 +465,128 @@ countRequests           0x2000'0000    0x1  Data  Gb  BluetoothConfig.o [2]
 countRequestsPlayer     0x2000'0083    0x1  Data  Gb  Player.o [4]
 countTicks              0x2000'0090    0x4  Data  Gb  Player.o [4]
 countTimeOutBluetoothEventTimer
-                        0x2000'000a    0x2  Data  Gb  BluetoothConfig.o [2]
+                        0x2000'000c    0x2  Data  Gb  BluetoothConfig.o [2]
 countTimerRequests      0x2000'0088    0x2  Data  Gb  Player.o [4]
-countTransFrames        0x2000'0629    0x1  Data  Gb  Serial.o [2]
-countVoltageValues      0x2000'0593    0x1  Data  Gb  Protection.o [2]
-currentBaudRate         0x2000'0620    0x4  Data  Gb  Serial.o [2]
-currentStateLed         0x2000'061c    0x1  Data  Gb  Led.o [2]
-delayMs                  0x800'29ed   0x1c  Code  Gb  System.o [2]
-delayUs                  0x800'2691   0x16  Code  Gb  Timers.o [2]
-dutyModulater           0x2000'0612    0x1  Data  Gb  ProcessInterrupterData.o [3]
+countTransFrames        0x2000'060a    0x1  Data  Gb  Serial.o [2]
+currentBaudRate         0x2000'0604    0x4  Data  Gb  Serial.o [2]
+currentStateLed         0x2000'0600    0x1  Data  Gb  Led.o [2]
+delayMs                  0x800'2183   0x1c  Code  Gb  System.o [2]
+delayUs                  0x800'26e9   0x16  Code  Gb  Timers.o [2]
+dutyModulater           0x2000'05f6    0x1  Data  Gb  ProcessInterrupterData.o [3]
 eventTimer              0x2000'0006    0x1  Data  Gb  BluetoothConfig.o [2]
-exit                     0x800'34e3    0x8  Code  Gb  exit.o [5]
-freqMolulater           0x2000'0613    0x1  Data  Gb  ProcessInterrupterData.o [3]
-frequencyMidiNote        0x800'3268  0x100  Data  Gb  Util.o [2]
-frexp                    0x800'06e5         Code  Gb  frexp.o [6]
-frexpl                   0x800'06e5         Code  Gb  frexp.o [6]
-initClock                0x800'28f1   0x5e  Code  Gb  System.o [2]
-initControllers          0x800'2d59   0x14  Code  Gb  ProcessMidiEvents.o [4]
-initGPIO                 0x800'296d   0x58  Code  Gb  System.o [2]
-initProtection           0x800'2a51   0xf8  Code  Gb  Protection.o [2]
-initSystemTimer          0x800'294f   0x1e  Code  Gb  System.o [2]
-initTimerPlayer          0x800'2f7d   0x36  Code  Gb  Player.o [4]
-initTimers               0x800'2479   0xb8  Code  Gb  Timers.o [2]
-initUsart                0x800'13f1   0xe0  Code  Gb  Serial.o [2]
+exit                     0x800'363b    0x8  Code  Gb  exit.o [5]
+filterData               0x800'2ddd   0x12  Code  Gb  Util.o [2]
+freqMolulater           0x2000'05f7    0x1  Data  Gb  ProcessInterrupterData.o [3]
+frequencyMidiNote        0x800'3380  0x100  Data  Gb  Util.o [2]
+frexp                    0x800'0781         Code  Gb  frexp.o [6]
+frexpl                   0x800'0781         Code  Gb  frexp.o [6]
+ignoreSamples           0x2000'05d1    0x1  Data  Gb  Protection.o [2]
+initClock                0x800'2089   0x5e  Code  Gb  System.o [2]
+initControllers          0x800'28b1   0x14  Code  Gb  ProcessMidiEvents.o [4]
+initGPIO                 0x800'2105   0x4c  Code  Gb  System.o [2]
+initProtection           0x800'21f1  0x150  Code  Gb  Protection.o [2]
+initSystemTimer          0x800'20e7   0x1e  Code  Gb  System.o [2]
+initTimerPlayer          0x800'2ac9   0x36  Code  Gb  Player.o [4]
+initTimers               0x800'24d1   0xb8  Code  Gb  Timers.o [2]
+initUsart                0x800'1451   0xe0  Code  Gb  Serial.o [2]
 isBluetoothConfig       0x2000'0003    0x1  Data  Gb  BluetoothConfig.o [2]
 isBluetoothConfigurate  0x2000'0004    0x1  Data  Gb  BluetoothConfig.o [2]
+isBtRes                 0x2000'0009    0x1  Data  Gb  BluetoothConfig.o [2]
 isConnected             0x2000'0008    0x1  Data  Gb  BluetoothConfig.o [2]
-isEnableEnterrupter     0x2000'0611    0x1  Data  Gb  ProcessInterrupterData.o [3]
-isEnableModulater       0x2000'0610    0x1  Data  Gb  ProcessInterrupterData.o [3]
-isError                 0x2000'062c    0x1  Data  Gb  System.o [2]
-isLowVoltageProtect     0x2000'0591    0x1  Data  Gb  Protection.o [2]
-isOffOutPin             0x2000'0592    0x1  Data  Gb  Protection.o [2]
+isEnableEnterrupter     0x2000'05f5    0x1  Data  Gb  ProcessInterrupterData.o [3]
+isEnableModulater       0x2000'05f4    0x1  Data  Gb  ProcessInterrupterData.o [3]
+isError                 0x2000'060b    0x1  Data  Gb  System.o [2]
+isLowVoltageProtect     0x2000'05cd    0x1  Data  Gb  Protection.o [2]
+isOffOutPin             0x2000'05ce    0x1  Data  Gb  Protection.o [2]
 isRequestBuffPlayer     0x2000'0082    0x1  Data  Gb  Player.o [4]
-isTermalProtect         0x2000'0590    0x1  Data  Gb  Protection.o [2]
-isUseVelocity           0x2000'062d    0x1  Data  Gb  Util.o [2]
-ldexp                    0x800'0741         Code  Gb  ldexp.o [6]
-ldexpl                   0x800'0741         Code  Gb  ldexp.o [6]
-lnbias                   0x800'0fd0  0x420  Data  Lc  pow64.o [6]
-main                     0x800'3369   0x74  Code  Gb  main.o [1]
-maxTemp                 0x2000'059c    0x2  Data  Gb  Protection.o [2]
-minTemp                 0x2000'059a    0x2  Data  Gb  Protection.o [2]
-minVoltage              0x2000'0598    0x2  Data  Gb  Protection.o [2]
+isTermalProtect         0x2000'05cc    0x1  Data  Gb  Protection.o [2]
+isUseVelocity           0x2000'0610    0x1  Data  Gb  Util.o [2]
+ldexp                    0x800'07dd         Code  Gb  ldexp.o [6]
+ldexpl                   0x800'07dd         Code  Gb  ldexp.o [6]
+lnbias                   0x800'1030  0x420  Data  Lc  pow64.o [6]
+main                     0x800'3481   0x78  Code  Gb  main.o [1]
+maxTemp                 0x2000'05dc    0x2  Data  Gb  Protection.o [2]
+minTemp                 0x2000'05da    0x2  Data  Gb  Protection.o [2]
+minVoltage              0x2000'05d8    0x2  Data  Gb  Protection.o [2]
 notes                   0x2000'0510   0x40  Data  Gb  ProcessMidiEvents.o [4]
-offAllNotes              0x800'2d6d   0x1e  Code  Gb  ProcessMidiEvents.o [4]
-offInterrupter           0x800'1d99   0x14  Code  Gb  ProcessInterrupterData.o [3]
-playNotes                0x800'1a09   0x72  Code  Gb  Util.o [2]
-portamentoTime          0x2000'062a    0x2  Data  Gb  Util.o [2]
-pow                      0x800'00c1  0x5ac  Code  Gb  pow64.o [6]
-powl                     0x800'00c1  0x5ac  Code  Gb  pow64.o [6]
-processADSR              0x800'3131   0xba  Code  Gb  MidiControllers.o [4]
-processBluetooth         0x800'1cb1   0x8c  Code  Gb  BluetoothConfig.o [2]
+offAllNotes              0x800'28c5   0x1e  Code  Gb  ProcessMidiEvents.o [4]
+offInterrupter           0x800'1c3d   0x14  Code  Gb  ProcessInterrupterData.o [3]
+playNotes                0x800'2e61   0x72  Code  Gb  Util.o [2]
+portamentoTime          0x2000'060e    0x2  Data  Gb  Util.o [2]
+pow                      0x800'00c1  0x69c  Code  Gb  pow64.o [6]
+powl                     0x800'00c1  0x69c  Code  Gb  pow64.o [6]
+processADSR              0x800'3249   0xba  Code  Gb  MidiControllers.o [4]
+processBluetooth         0x800'1b55   0x8c  Code  Gb  BluetoothConfig.o [2]
 processBluetoothEventTimer
-                         0x800'1b01   0x1e  Code  Gb  BluetoothConfig.o [2]
-processFrames            0x800'16dd  0x112  Code  Gb  Serial.o [2]
-processLed               0x800'27eb   0xf4  Code  Gb  Led.o [2]
-processMidiControllers   0x800'31eb   0x4a  Code  Gb  MidiControllers.o [4]
-processMidiEvents        0x800'2ce9   0x50  Code  Gb  ProcessMidiEvents.o [4]
-processMidiNotes         0x800'2cd1   0x18  Code  Gb  ProcessMidiEvents.o [4]
-processModulater         0x800'1e5d   0x44  Code  Gb  ProcessInterrupterData.o [3]
-processPlayer            0x800'2ffd   0x64  Code  Gb  Player.o [4]
-processPortamento        0x800'310d   0x24  Code  Gb  MidiControllers.o [4]
-processProtection        0x800'2bd1   0xb0  Code  Gb  Protection.o [2]
-processRequestsPlayer    0x800'307d   0x46  Code  Gb  Player.o [4]
-processTimer             0x800'26b5   0xa4  Code  Gb  Timers.o [2]
-processTxFrames          0x800'156b   0x36  Code  Gb  Serial.o [2]
-resetMidiPlayer          0x800'1ed1   0x1e  Code  Gb  ProcessMidiData.o [3]
+                         0x800'1971   0x1e  Code  Gb  BluetoothConfig.o [2]
+processBtRes             0x800'1b27   0x2e  Code  Gb  BluetoothConfig.o [2]
+processFrames            0x800'173d  0x112  Code  Gb  Serial.o [2]
+processLed               0x800'1f4b  0x126  Code  Gb  Led.o [2]
+processMidiControllers   0x800'3303   0x4a  Code  Gb  MidiControllers.o [4]
+processMidiEvents        0x800'2841   0x50  Code  Gb  ProcessMidiEvents.o [4]
+processMidiNotes         0x800'2829   0x18  Code  Gb  ProcessMidiEvents.o [4]
+processModulater         0x800'1d01   0x44  Code  Gb  ProcessInterrupterData.o [3]
+processPlayer            0x800'2b49   0x66  Code  Gb  Player.o [4]
+processPortamento        0x800'3225   0x24  Code  Gb  MidiControllers.o [4]
+processProtection        0x800'23ff   0x6c  Code  Gb  Protection.o [2]
+processRequestsPlayer    0x800'2bcd   0x46  Code  Gb  Player.o [4]
+processTimer             0x800'270d   0xa4  Code  Gb  Timers.o [2]
+processTxFrames          0x800'15d3   0x3c  Code  Gb  Serial.o [2]
+resetMidiPlayer          0x800'1d75   0x1e  Code  Gb  ProcessMidiData.o [3]
 resetTimerRequestsPlayer
-                         0x800'2ff5    0x8  Code  Gb  Player.o [4]
-rxData                  0x2000'05fe    0x1  Data  Gb  Serial.o [2]
-scalbln                  0x800'0741         Code  Gb  ldexp.o [6]
-scalblnl                 0x800'0741         Code  Gb  ldexp.o [6]
-scalbn                   0x800'0741         Code  Gb  ldexp.o [6]
-scalbnl                  0x800'0741         Code  Gb  ldexp.o [6]
-setAttack                0x800'1ff5   0x16  Code  Gb  ProcessMidiData.o [3]
-setBaudrateUsart         0x800'14d1   0x1a  Code  Gb  Serial.o [2]
-setBluetoothEvent        0x800'1b27    0x6  Code  Gb  BluetoothConfig.o [2]
-setCurrentTick           0x800'1ef1   0x3c  Code  Gb  ProcessMidiData.o [3]
-setDecay                 0x800'200b   0x16  Code  Gb  ProcessMidiData.o [3]
-setEnableOutPin          0x800'2a3d   0x14  Code  Gb  Protection.o [2]
-setEnableTimer           0x800'2531   0xd0  Code  Gb  Timers.o [2]
-setEnbale                0x800'1dad   0x2a  Code  Gb  ProcessInterrupterData.o [3]
-setEndRequest            0x800'1fed    0x8  Code  Gb  ProcessMidiData.o [3]
-setFreqdTimer            0x800'266f   0x22  Code  Gb  Timers.o [2]
-setFrequency             0x800'1dff   0x12  Code  Gb  ProcessInterrupterData.o [3]
-setKey1                  0x800'1d69   0x10  Code  Gb  ProcessSystemData.o [3]
-setKey2                  0x800'1d79    0xe  Code  Gb  ProcessSystemData.o [3]
-setMaxTick               0x800'1fab   0x14  Code  Gb  ProcessMidiData.o [3]
-setMidiEvent             0x800'1f61   0x24  Code  Gb  ProcessMidiData.o [3]
-setMidiEventTick         0x800'1f85   0x26  Code  Gb  ProcessMidiData.o [3]
-setModulater             0x800'1e11   0x4c  Code  Gb  ProcessInterrupterData.o [3]
-setOnePulseTimer         0x800'2625   0x2a  Code  Gb  Timers.o [2]
-setPW                    0x800'1deb   0x14  Code  Gb  ProcessInterrupterData.o [3]
-setPeriodTimer           0x800'265d   0x12  Code  Gb  Timers.o [2]
-setPitchBendTimer        0x800'19a1   0x68  Code  Gb  Util.o [2]
-setPortamentoTime        0x800'1fd7   0x16  Code  Gb  ProcessMidiData.o [3]
-setPulse                 0x800'1dd7   0x14  Code  Gb  ProcessInterrupterData.o [3]
-setPulseTimer            0x800'264f    0xe  Code  Gb  Timers.o [2]
-setRelease               0x800'2029   0x16  Code  Gb  ProcessMidiData.o [3]
-setResolution            0x800'1f4d   0x14  Code  Gb  ProcessMidiData.o [3]
-setStartMidiPlayer       0x800'1ea5   0x16  Code  Gb  ProcessMidiData.o [3]
-setStateLed              0x800'27e5    0x6  Code  Gb  Led.o [2]
-setStopMidiPlayer        0x800'1ebb   0x16  Code  Gb  ProcessMidiData.o [3]
-setSustain               0x800'2021    0x8  Code  Gb  ProcessMidiData.o [3]
-setTempo                 0x800'1f2d   0x20  Code  Gb  ProcessMidiData.o [3]
-setUseVelocity           0x800'1fc7   0x10  Code  Gb  ProcessMidiData.o [3]
-setVolume                0x800'1fbf    0x8  Code  Gb  ProcessMidiData.o [3]
-strchr                   0x800'27d1         Code  Gb  strchr.o [7]
-strlen                   0x800'2a2d         Code  Gb  strlen.o [7]
-strstr                   0x800'1ad1   0x2e  Code  Gb  strstr.o [5]
-sum                     0x2000'05fc    0x1  Data  Gb  Serial.o [2]
-timeOffModulater        0x2000'0616    0x2  Data  Gb  ProcessInterrupterData.o [3]
-timeOnModulater         0x2000'0614    0x2  Data  Gb  ProcessInterrupterData.o [3]
+                         0x800'2b41    0x8  Code  Gb  Player.o [4]
+rxData                  0x2000'05e2    0x1  Data  Gb  Serial.o [2]
+scalbln                  0x800'07dd         Code  Gb  ldexp.o [6]
+scalblnl                 0x800'07dd         Code  Gb  ldexp.o [6]
+scalbn                   0x800'07dd         Code  Gb  ldexp.o [6]
+scalbnl                  0x800'07dd         Code  Gb  ldexp.o [6]
+setAttack                0x800'1e99   0x16  Code  Gb  ProcessMidiData.o [3]
+setBaudrateUsart         0x800'1531   0x1a  Code  Gb  Serial.o [2]
+setBluetoothEvent        0x800'1997    0x6  Code  Gb  BluetoothConfig.o [2]
+setCurrentTick           0x800'1d95   0x3c  Code  Gb  ProcessMidiData.o [3]
+setDecay                 0x800'1eaf   0x16  Code  Gb  ProcessMidiData.o [3]
+setEnableOutPin          0x800'21d9   0x16  Code  Gb  Protection.o [2]
+setEnableTimer           0x800'2589   0xd0  Code  Gb  Timers.o [2]
+setEnbale                0x800'1c51   0x2a  Code  Gb  ProcessInterrupterData.o [3]
+setEndRequest            0x800'1e91    0x8  Code  Gb  ProcessMidiData.o [3]
+setFreqdTimer            0x800'26c7   0x22  Code  Gb  Timers.o [2]
+setFrequency             0x800'1ca3   0x12  Code  Gb  ProcessInterrupterData.o [3]
+setKey1                  0x800'1c0d   0x10  Code  Gb  ProcessSystemData.o [3]
+setKey2                  0x800'1c1d    0xe  Code  Gb  ProcessSystemData.o [3]
+setMaxTick               0x800'1e4f   0x14  Code  Gb  ProcessMidiData.o [3]
+setMidiEvent             0x800'1e05   0x24  Code  Gb  ProcessMidiData.o [3]
+setMidiEventTick         0x800'1e29   0x26  Code  Gb  ProcessMidiData.o [3]
+setModulater             0x800'1cb5   0x4c  Code  Gb  ProcessInterrupterData.o [3]
+setOnePulseTimer         0x800'267d   0x2a  Code  Gb  Timers.o [2]
+setPW                    0x800'1c8f   0x14  Code  Gb  ProcessInterrupterData.o [3]
+setPeriodTimer           0x800'26b5   0x12  Code  Gb  Timers.o [2]
+setPitchBendTimer        0x800'2df9   0x68  Code  Gb  Util.o [2]
+setPortamentoTime        0x800'1e7b   0x16  Code  Gb  ProcessMidiData.o [3]
+setPulse                 0x800'1c7b   0x14  Code  Gb  ProcessInterrupterData.o [3]
+setPulseTimer            0x800'26a7    0xe  Code  Gb  Timers.o [2]
+setRelease               0x800'1ecd   0x16  Code  Gb  ProcessMidiData.o [3]
+setResolution            0x800'1df1   0x14  Code  Gb  ProcessMidiData.o [3]
+setStartMidiPlayer       0x800'1d49   0x16  Code  Gb  ProcessMidiData.o [3]
+setStateLed              0x800'1f45    0x6  Code  Gb  Led.o [2]
+setStopMidiPlayer        0x800'1d5f   0x16  Code  Gb  ProcessMidiData.o [3]
+setSustain               0x800'1ec5    0x8  Code  Gb  ProcessMidiData.o [3]
+setTempo                 0x800'1dd1   0x20  Code  Gb  ProcessMidiData.o [3]
+setUseVelocity           0x800'1e6b   0x10  Code  Gb  ProcessMidiData.o [3]
+setVolume                0x800'1e63    0x8  Code  Gb  ProcessMidiData.o [3]
+strchr                   0x800'1f31         Code  Gb  strchr.o [7]
+strlen                   0x800'21c9         Code  Gb  strlen.o [7]
+strstr                   0x800'1941   0x2e  Code  Gb  strstr.o [5]
+sum                     0x2000'05e0    0x1  Data  Gb  Serial.o [2]
+temperatureFilter       0x2000'05c8    0x4  Data  Gb  Protection.o [2]
+timeOffModulater        0x2000'05fa    0x2  Data  Gb  ProcessInterrupterData.o [3]
+timeOnModulater         0x2000'05f8    0x2  Data  Gb  ProcessInterrupterData.o [3]
 timeOutBluetoothEventTimer
-                        0x2000'000c    0x2  Data  Gb  BluetoothConfig.o [2]
-trackEnd                 0x800'2fd5   0x16  Code  Gb  Player.o [4]
-txBuff                  0x2000'05c8   0x34  Data  Gb  Serial.o [2]
-txSum                   0x2000'0628    0x1  Data  Gb  Serial.o [2]
-valuesAdc               0x2000'0594    0x4  Data  Gb  Protection.o [2]
-valuesTemp              0x2000'05b4   0x14  Data  Gb  Protection.o [2]
-valuesVoltage           0x2000'05a0   0x14  Data  Gb  Protection.o [2]
+                        0x2000'000e    0x2  Data  Gb  BluetoothConfig.o [2]
+trackEnd                 0x800'2b21   0x16  Code  Gb  Player.o [4]
+txBuff                  0x2000'0590   0x34  Data  Gb  Serial.o [2]
+txSum                   0x2000'0609    0x1  Data  Gb  Serial.o [2]
+valuesAdc               0x2000'05d4    0x4  Data  Gb  Protection.o [2]
+voltageFilter           0x2000'05c4    0x4  Data  Gb  Protection.o [2]
 
 
 [1] = C:\Users\Dazer\Documents\GitHub\Tesla_coil_V1\soft\TeslaCoilV1.0.2\Debug\Obj
@@ -596,9 +598,9 @@ valuesVoltage           0x2000'05a0   0x14  Data  Gb  Protection.o [2]
 [7] = rt6M_tl.a
 [8] = shb_l.a
 
-  12'294 bytes of readonly  code memory
-   1'459 bytes of readonly  data memory
-   2'603 bytes of readwrite data memory
+  12'636 bytes of readonly  code memory
+   1'465 bytes of readonly  data memory
+   2'574 bytes of readwrite data memory
 
 Errors: none
 Warnings: none

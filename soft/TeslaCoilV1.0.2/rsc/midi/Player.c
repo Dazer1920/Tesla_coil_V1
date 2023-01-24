@@ -18,13 +18,8 @@ void PlayerBegen() {
   countBuffMidiEvents = 0;
   countProcesedMidiEvents = 0;
   
-  for(uint8_t i = 0; i < SIZE_MIDI_EVENTS_BUFF; i++) {
-    MidiEventTicks[i] = 0;
-    
-    MidiEvents[i][0] = 0;
-    MidiEvents[i][1] = 0;
-    MidiEvents[i][2] = 0;
-  }
+  memset(MidiEvents, 0, sizeof(MidiEvents));
+  memset(MidiEventTicks, 0, sizeof(MidiEventTicks));
   
   uint8_t frame[] = {TX_SET_BEGIN_PLAYER, 0, 0, 0};
   TransmitFrame(frame);
@@ -55,7 +50,7 @@ void trackEnd() {
 }
 
 uint16_t countPlayTicks = 0, countTimerRequests = 0;
-boolean isRequestBuffPlayer = false;
+bool isRequestBuffPlayer = false;
 uint8_t countRequestsPlayer = 0;
 
 void resetTimerRequestsPlayer() {

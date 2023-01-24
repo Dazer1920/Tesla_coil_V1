@@ -16,7 +16,7 @@ typedef struct {
   uint8_t channel;
   uint8_t note;
   uint8_t velocity;
-  boolean isPlaing;
+  bool isPlaing;
   uint32_t milis;
 } MidiNote;
 

@@ -79,7 +79,7 @@ void setVolume(uint8_t *buff) {
 }
 
 void setUseVelocity(uint8_t *buff) {
-  extern boolean isUseVelocity;
+  extern bool isUseVelocity;
   isUseVelocity = (buff[1] > 0)? true : false;
 }
 
@@ -89,7 +89,7 @@ void setPortamentoTime(uint8_t *buff) {
 }
 
 void setPortamentoType(uint8_t *buff) {
-  extern boolean portamentoType;
+  extern bool portamentoType;
   portamentoType = (buff[1] > 0)? true : false;
 }
 
