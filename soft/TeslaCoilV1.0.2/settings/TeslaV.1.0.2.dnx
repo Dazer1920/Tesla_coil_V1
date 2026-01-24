@@ -16,10 +16,10 @@
         <ShowSource>1</ShowSource>
     </Trace1>
     <DebugChecksum>
-        <Checksum>1059410650</Checksum>
+        <Checksum>1331704652</Checksum>
     </DebugChecksum>
     <StLinkDriver>
-        <stlinkserialNo>54FF77066580515233430167</stlinkserialNo>
+        <stlinkserialNo>36FF6F064E57343617141443</stlinkserialNo>
         <stlinkfoundProbes />
         <stlinkResetStyle>0</stlinkResetStyle>
         <stlinkResetStrategy>0</stlinkResetStrategy>

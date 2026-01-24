@@ -3,9 +3,9 @@
 #define NUMBER_AT_COMMANDS 2
 
 uint8_t ATCommands[][25] = { // config commands
-  {"AT+NAMETeslaCoil\r\n"},
+  {"AT+NAMETeslaCoil"},
   //{"AT+ENABLEIND0\r\n"},
-  {"AT+BAUD7\r\n"}
+  {"AT+BAUD7"}
 };
 
 #define NUMBER_BAUDS 15

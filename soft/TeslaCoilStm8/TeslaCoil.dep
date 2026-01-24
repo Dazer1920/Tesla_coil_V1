@@ -1,45 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-    <fileVersion>2</fileVersion>
-    <fileChecksum>3728321050</fileChecksum>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>3339207345</fileChecksum>
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\rsc\System.c</file>
-            <file>$PROJ_DIR$\rsc\Timer.c</file>
-            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\System.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\TeslaCoil.pbd</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\Led.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\Timer.xcl</file>
             <file>$PROJ_DIR$\inc\stm8s.h</file>
+            <file>$PROJ_DIR$\rsc\Timer.c</file>
             <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
-            <file>$PROJ_DIR$\inc\System.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\Led.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\Led.pbi</file>
-            <file>$PROJ_DIR$\inc\Led.h</file>
-            <file>$PROJ_DIR$\inc\Timer.h</file>
-            <file>$PROJ_DIR$\rsc\Led.c</file>
-            <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
             <file>$PROJ_DIR$\Debug\List\TeslaCoil.map</file>
             <file>$PROJ_DIR$\Debug\Obj\System.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\Timer.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+            <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\Led.o</file>
             <file>$PROJ_DIR$\Debug\Obj\Timer.o</file>
+            <file>$PROJ_DIR$\Debug\Exe\TeslaCoil.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\System.pbi</file>
+            <file>$PROJ_DIR$\rsc\Led.c</file>
+            <file>$PROJ_DIR$\rsc\System.c</file>
             <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
             <file>$TOOLKIT_DIR$\config\lnkstm8s003f3.icf</file>
-            <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
-            <file>$PROJ_DIR$\Debug\Exe\TeslaCoil.out</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\System.pbi</file>
+            <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\Led.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\Timer.pbi</file>
+            <file>$PROJ_DIR$\main.c</file>
             <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\inc\Led.h</file>
+            <file>$PROJ_DIR$\inc\System.h</file>
+            <file>$PROJ_DIR$\inc\Timer.h</file>
         </outputs>
         <file>
             <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 19 12</file>
+                    <file> 14 8</file>
                 </tool>
             </outputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\rsc\System.c</name>
+            <name>$PROJ_DIR$\rsc\Timer.c</name>
             <outputs>
                 <tool>
                     <name>ICCSTM8</name>
@@ -47,90 +52,13 @@
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 21</file>
+                    <file> 4</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCSTM8</name>
-                    <file> 5 3 4</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 3 5 4</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\rsc\Timer.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCSTM8</name>
-                    <file> 15</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 14</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCSTM8</name>
-                    <file> 9 5 3 4</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 3 5 9 4</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\main.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 16</file>
-                </tool>
-                <tool>
-                    <name>ICCSTM8</name>
-                    <file> 22</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 20</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCSTM8</name>
-                    <file> 5 3 4 8 9</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 3 5 4 8 9</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\rsc\Led.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCSTM8</name>
-                    <file> 6</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 7</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCSTM8</name>
-                    <file> 8 5 3 4</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 3 5 8 4</file>
+                    <file> 27 26 5 7</file>
                 </tool>
             </inputs>
         </file>
@@ -139,13 +67,74 @@
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 12</file>
+                    <file> 8</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 17 6 22 13 15 11 18</file>
+                    <file> 19 12 24 9 13 20 11</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\rsc\Led.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 12</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 3</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 25 26 5 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\rsc\System.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 9</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 0</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 26 5 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 18</file>
+                </tool>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 24</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 2</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 26 5 7 25 27</file>
                 </tool>
             </inputs>
         </file>

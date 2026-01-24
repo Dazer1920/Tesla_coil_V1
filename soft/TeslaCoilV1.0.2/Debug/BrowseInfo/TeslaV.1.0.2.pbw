@@ -150383,13 +150383,13 @@
     "scope": null
   },
   {
-    "ID": "c:BluetoothConfig.h@377@macro@CHECK_CONFIG_COMMAND_REQUEST",
+    "ID": "c:BluetoothConfig.h@493@macro@CHECK_CONFIG_COMMAND_REQUEST",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "CHECK_CONFIG_COMMAND_REQUEST",
     "location": {
       "column": "9",
-      "line": "18",
+      "line": "21",
       "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
     },
     "name": "CHECK_CONFIG_COMMAND_REQUEST",
@@ -150397,13 +150397,13 @@
     "scope": null
   },
   {
-    "ID": "c:BluetoothConfig.h@432@macro@CHECK_CONFIG_COMMAND_ANSWER",
+    "ID": "c:BluetoothConfig.h@536@macro@CHECK_CONFIG_COMMAND_ANSWER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "CHECK_CONFIG_COMMAND_ANSWER",
     "location": {
       "column": "9",
-      "line": "19",
+      "line": "22",
       "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
     },
     "name": "CHECK_CONFIG_COMMAND_ANSWER",
@@ -150411,13 +150411,13 @@
     "scope": null
   },
   {
-    "ID": "c:BluetoothConfig.h@489@macro@CONFIGURATE_COMMAND_ANSWER",
+    "ID": "c:BluetoothConfig.h@580@macro@CONFIGURATE_COMMAND_ANSWER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "CONFIGURATE_COMMAND_ANSWER",
     "location": {
       "column": "9",
-      "line": "21",
+      "line": "24",
       "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
     },
     "name": "CONFIGURATE_COMMAND_ANSWER",
@@ -150437,7 +150437,7 @@
         "display": "NO_EVENT",
         "location": {
           "column": "3",
-          "line": "24",
+          "line": "27",
           "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
         },
         "name": "NO_EVENT",
@@ -150451,7 +150451,7 @@
         "display": "START_CONFIG",
         "location": {
           "column": "3",
-          "line": "25",
+          "line": "28",
           "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
         },
         "name": "START_CONFIG",
@@ -150465,7 +150465,7 @@
         "display": "CHECK_CONFIG",
         "location": {
           "column": "3",
-          "line": "26",
+          "line": "29",
           "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
         },
         "name": "CHECK_CONFIG",
@@ -150479,7 +150479,7 @@
         "display": "ANSWER_CHECK_CONFIG",
         "location": {
           "column": "3",
-          "line": "27",
+          "line": "30",
           "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
         },
         "name": "ANSWER_CHECK_CONFIG",
@@ -150493,7 +150493,7 @@
         "display": "CONFIG_END",
         "location": {
           "column": "3",
-          "line": "28",
+          "line": "31",
           "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
         },
         "name": "CONFIG_END",
@@ -150507,7 +150507,7 @@
         "display": "CONFIGURARE",
         "location": {
           "column": "3",
-          "line": "29",
+          "line": "32",
           "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
         },
         "name": "CONFIGURARE",
@@ -150521,7 +150521,7 @@
         "display": "ANSWER_CONFIGURARE",
         "location": {
           "column": "3",
-          "line": "30",
+          "line": "33",
           "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
         },
         "name": "ANSWER_CONFIGURARE",
@@ -150535,7 +150535,7 @@
         "display": "ERROR_CONFIG",
         "location": {
           "column": "3",
-          "line": "31",
+          "line": "34",
           "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
         },
         "name": "ERROR_CONFIG",
@@ -150549,7 +150549,7 @@
         "display": "CONNECTED",
         "location": {
           "column": "3",
-          "line": "32",
+          "line": "35",
           "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
         },
         "name": "CONNECTED",
@@ -150563,7 +150563,7 @@
         "display": "DISCONNECTED",
         "location": {
           "column": "3",
-          "line": "33",
+          "line": "36",
           "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
         },
         "name": "DISCONNECTED",
@@ -150577,7 +150577,7 @@
         "display": "CHECK_CONNECTION",
         "location": {
           "column": "3",
-          "line": "34",
+          "line": "37",
           "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
         },
         "name": "CHECK_CONNECTION",
@@ -150587,7 +150587,7 @@
     ],
     "location": {
       "column": "9",
-      "line": "23",
+      "line": "26",
       "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
     },
     "name": "",
@@ -150601,7 +150601,7 @@
     "display": "enum BluetoothEvents",
     "location": {
       "column": "3",
-      "line": "35",
+      "line": "38",
       "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
     },
     "name": "BluetoothEvents",
@@ -150615,7 +150615,7 @@
     "display": "void SetBluetoothEventTimer(BluetoothEvents, uint16_t)",
     "location": {
       "column": "6",
-      "line": "37",
+      "line": "40",
       "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
     },
     "name": "SetBluetoothEventTimer",
@@ -150629,7 +150629,7 @@
     "display": "void SetBluetoothEventTimer(BluetoothEvents, uint16_t)",
     "location": {
       "column": "6",
-      "line": "37",
+      "line": "40",
       "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
     },
     "name": "SetBluetoothEventTimer",
@@ -150643,7 +150643,7 @@
     "display": "void StopBluetoothEventTimer(void)",
     "location": {
       "column": "6",
-      "line": "38",
+      "line": "41",
       "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
     },
     "name": "StopBluetoothEventTimer",
@@ -150657,7 +150657,7 @@
     "display": "void StopBluetoothEventTimer(void)",
     "location": {
       "column": "6",
-      "line": "38",
+      "line": "41",
       "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
     },
     "name": "StopBluetoothEventTimer",
@@ -150671,7 +150671,7 @@
     "display": "void cleareCounterBluetoothEventTimer(void)",
     "location": {
       "column": "6",
-      "line": "39",
+      "line": "42",
       "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
     },
     "name": "cleareCounterBluetoothEventTimer",
@@ -150685,7 +150685,7 @@
     "display": "void cleareCounterBluetoothEventTimer(void)",
     "location": {
       "column": "6",
-      "line": "39",
+      "line": "42",
       "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
     },
     "name": "cleareCounterBluetoothEventTimer",
@@ -150699,7 +150699,7 @@
     "display": "void setBluetoothEvent(BluetoothEvents)",
     "location": {
       "column": "6",
-      "line": "41",
+      "line": "44",
       "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
     },
     "name": "setBluetoothEvent",
@@ -150713,7 +150713,7 @@
     "display": "void setBluetoothEvent(BluetoothEvents)",
     "location": {
       "column": "6",
-      "line": "41",
+      "line": "44",
       "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
     },
     "name": "setBluetoothEvent",
@@ -150727,7 +150727,7 @@
     "display": "void setBtRes(void)",
     "location": {
       "column": "6",
-      "line": "42",
+      "line": "45",
       "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
     },
     "name": "setBtRes",
@@ -150741,7 +150741,7 @@
     "display": "void setBtRes(void)",
     "location": {
       "column": "6",
-      "line": "42",
+      "line": "45",
       "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
     },
     "name": "setBtRes",
@@ -150755,7 +150755,7 @@
     "display": "void processBluetoothEventTimer(void)",
     "location": {
       "column": "6",
-      "line": "44",
+      "line": "47",
       "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
     },
     "name": "processBluetoothEventTimer",
@@ -150769,7 +150769,7 @@
     "display": "void processBluetoothEventTimer(void)",
     "location": {
       "column": "6",
-      "line": "44",
+      "line": "47",
       "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
     },
     "name": "processBluetoothEventTimer",
@@ -150783,7 +150783,7 @@
     "display": "void processBtRes(void)",
     "location": {
       "column": "6",
-      "line": "45",
+      "line": "48",
       "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
     },
     "name": "processBtRes",
@@ -150797,7 +150797,7 @@
     "display": "void processBtRes(void)",
     "location": {
       "column": "6",
-      "line": "45",
+      "line": "48",
       "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
     },
     "name": "processBtRes",
@@ -150811,7 +150811,7 @@
     "display": "void processBluetooth(void)",
     "location": {
       "column": "6",
-      "line": "47",
+      "line": "50",
       "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
     },
     "name": "processBluetooth",
@@ -150825,7 +150825,7 @@
     "display": "void processBluetooth(void)",
     "location": {
       "column": "6",
-      "line": "47",
+      "line": "50",
       "path": "C:\\Users\\Dazer\\Documents\\GitHub\\Tesla_coil_V1\\soft\\TeslaCoilV1.0.2\\inc\\BluetoothConfig.h"
     },
     "name": "processBluetooth",
@@ -153817,7 +153817,7 @@
     "scope": null
   },
   {
-    "ID": "c:BluetoothConfig.c@204@macro@NUMBER_BAUDS",
+    "ID": "c:BluetoothConfig.c@196@macro@NUMBER_BAUDS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NUMBER_BAUDS",
